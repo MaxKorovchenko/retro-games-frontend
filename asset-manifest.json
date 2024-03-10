@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/retro-games/static/css/main.19f52f6a.css",
-    "main.js": "/retro-games/static/js/main.67054bcd.js",
-    "index.html": "/retro-games/index.html",
-    "main.19f52f6a.css.map": "/retro-games/static/css/main.19f52f6a.css.map",
-    "main.67054bcd.js.map": "/retro-games/static/js/main.67054bcd.js.map"
+    "main.css": "/retro-games-frontend/static/css/main.19f52f6a.css",
+    "main.js": "/retro-games-frontend/static/js/main.279ad642.js",
+    "index.html": "/retro-games-frontend/index.html",
+    "main.19f52f6a.css.map": "/retro-games-frontend/static/css/main.19f52f6a.css.map",
+    "main.279ad642.js.map": "/retro-games-frontend/static/js/main.279ad642.js.map"
   },
   "entrypoints": [
     "static/css/main.19f52f6a.css",
-    "static/js/main.67054bcd.js"
+    "static/js/main.279ad642.js"
   ]
 }
