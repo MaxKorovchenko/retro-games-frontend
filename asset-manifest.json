@@ -1,13 +1,29 @@
 {
   "files": {
     "main.css": "/retro-games-frontend/static/css/main.19f52f6a.css",
-    "main.js": "/retro-games-frontend/static/js/main.279ad642.js",
+    "main.js": "/retro-games-frontend/static/js/main.5d91b7f3.js",
+    "static/js/989.8e80a513.chunk.js": "/retro-games-frontend/static/js/989.8e80a513.chunk.js",
+    "static/js/167.d9eca965.chunk.js": "/retro-games-frontend/static/js/167.d9eca965.chunk.js",
+    "static/js/266.24cde19e.chunk.js": "/retro-games-frontend/static/js/266.24cde19e.chunk.js",
+    "static/js/828.ca77dc44.chunk.js": "/retro-games-frontend/static/js/828.ca77dc44.chunk.js",
+    "static/js/440.6165d9f4.chunk.js": "/retro-games-frontend/static/js/440.6165d9f4.chunk.js",
+    "static/js/115.e18f95d8.chunk.js": "/retro-games-frontend/static/js/115.e18f95d8.chunk.js",
+    "static/js/31.94c5e7f7.chunk.js": "/retro-games-frontend/static/js/31.94c5e7f7.chunk.js",
+    "static/js/409.e0748758.chunk.js": "/retro-games-frontend/static/js/409.e0748758.chunk.js",
     "index.html": "/retro-games-frontend/index.html",
     "main.19f52f6a.css.map": "/retro-games-frontend/static/css/main.19f52f6a.css.map",
-    "main.279ad642.js.map": "/retro-games-frontend/static/js/main.279ad642.js.map"
+    "main.5d91b7f3.js.map": "/retro-games-frontend/static/js/main.5d91b7f3.js.map",
+    "989.8e80a513.chunk.js.map": "/retro-games-frontend/static/js/989.8e80a513.chunk.js.map",
+    "167.d9eca965.chunk.js.map": "/retro-games-frontend/static/js/167.d9eca965.chunk.js.map",
+    "266.24cde19e.chunk.js.map": "/retro-games-frontend/static/js/266.24cde19e.chunk.js.map",
+    "828.ca77dc44.chunk.js.map": "/retro-games-frontend/static/js/828.ca77dc44.chunk.js.map",
+    "440.6165d9f4.chunk.js.map": "/retro-games-frontend/static/js/440.6165d9f4.chunk.js.map",
+    "115.e18f95d8.chunk.js.map": "/retro-games-frontend/static/js/115.e18f95d8.chunk.js.map",
+    "31.94c5e7f7.chunk.js.map": "/retro-games-frontend/static/js/31.94c5e7f7.chunk.js.map",
+    "409.e0748758.chunk.js.map": "/retro-games-frontend/static/js/409.e0748758.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19f52f6a.css",
-    "static/js/main.279ad642.js"
+    "static/js/main.5d91b7f3.js"
   ]
 }

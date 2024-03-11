@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/828.ca77dc44.chunk.js","mappings":"qKAAA,MAIA,EAJwBA,KACfC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,mB","sources":["pages/GameDetailsPage.jsx"],"sourcesContent":["const GameDetailsPage = () => {\n  return <div>GameDetailsPage</div>;\n};\n\nexport default GameDetailsPage;\n"],"names":["GameDetailsPage","_jsx","children"],"sourceRoot":""}
