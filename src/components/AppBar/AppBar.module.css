@@ -1,0 +1,15 @@
+header {
+  background-color: rgb(52, 52, 67);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 1230px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}

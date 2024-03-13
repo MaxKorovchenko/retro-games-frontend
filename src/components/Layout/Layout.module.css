@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
+  background-color: rgb(84, 79, 70);
+}
+
+main {
+  flex-grow: 1;
+
+  width: 1230px;
+  min-height: 80px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
