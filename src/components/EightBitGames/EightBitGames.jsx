@@ -1,7 +1,12 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL;
+const URL =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3030'
+    : 'https://retro-games-backend.onrender.com';
+
+axios.defaults.baseURL = URL;
 
 export const EightBitGames = () => {
   const [games, setGames] = useState([]);
