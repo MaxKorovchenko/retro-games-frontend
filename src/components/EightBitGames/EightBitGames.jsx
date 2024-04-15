@@ -11,21 +11,20 @@ axios.defaults.baseURL = URL;
 export const EightBitGames = () => {
   const [games, setGames] = useState([]);
 
-  console.log(process.env.REACT_APP_API_URL);
-
   useEffect(() => {
     const fetchGames = async () => {
       const { data } = await axios.get('/api/games');
-      console.log(data);
       setGames(data);
     };
 
     fetchGames();
   }, []);
 
+  const eightBitGames = games.filter(game => game.platform === '8-bit');
+
   return (
     <ul>
-      {games.map(({ _id, title }) => (
+      {eightBitGames.map(({ _id, title }) => (
         <li key={_id}>{title}</li>
       ))}
     </ul>
