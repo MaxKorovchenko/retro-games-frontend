@@ -6,6 +6,8 @@ axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 export const EightBitGames = () => {
   const [games, setGames] = useState([]);
 
+  console.log(process.env.REACT_APP_API_URL);
+
   useEffect(() => {
     const fetchGames = async () => {
       const { data } = await axios.get('/api/games');
