@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[266],{266:(e,r,s)=>{s.r(r),s.d(r,{default:()=>n});var t=s(579);const n=()=>(0,t.jsx)("div",{children:"SixteenBitGamesPage"})}}]);
-//# sourceMappingURL=266.24cde19e.chunk.js.map

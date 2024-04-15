@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/167.d9eca965.chunk.js","mappings":"qKAAA,MAIA,EAJ0BA,KACjBC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,qB","sources":["pages/EightBitGamesPage.jsx"],"sourcesContent":["const EightBitGamesPage = () => {\n  return <div>EightBitGamesPage</div>;\n};\n\nexport default EightBitGamesPage;\n"],"names":["EightBitGamesPage","_jsx","children"],"sourceRoot":""}

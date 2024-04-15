@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/266.24cde19e.chunk.js","mappings":"qKAAA,MAIA,EAJ4BA,KACnBC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,uB","sources":["pages/SixteenBitGamesPage.jsx"],"sourcesContent":["const SixteenBitGamesPage = () => {\n  return <div>SixteenBitGamesPage</div>;\n};\n\nexport default SixteenBitGamesPage;\n"],"names":["SixteenBitGamesPage","_jsx","children"],"sourceRoot":""}
