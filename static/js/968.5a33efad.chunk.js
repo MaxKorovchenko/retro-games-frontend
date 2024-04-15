@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[968],{968:(e,t,s)=>{s.r(t),s.d(t,{default:()=>i});var r=s(154),a=s(43),n=s(579);const c=()=>{const[e,t]=(0,a.useState)([]);(0,a.useEffect)((()=>{(async()=>{const{data:e}=await r.A.get("/api/games");t(e)})()}),[]);const s=e.filter((e=>"16-bit"===e.platform));return(0,n.jsx)("ul",{children:s.map((e=>{let{_id:t,title:s}=e;return(0,n.jsx)("li",{children:s},t)}))})},i=()=>(0,n.jsx)("div",{children:(0,n.jsx)(c,{})})}}]);
+//# sourceMappingURL=968.5a33efad.chunk.js.map
