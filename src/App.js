@@ -3,6 +3,14 @@ import { lazy } from 'react';
 
 import { Layout } from 'components/Layout/Layout';
 
+import axios from 'axios';
+const URL =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:3030'
+    : 'https://retro-games-backend.onrender.com';
+
+axios.defaults.baseURL = URL;
+
 const HomePage = lazy(() => import('./pages/HomePage'));
 const EightBitGamesPage = lazy(() => import('./pages/EightBitGamesPage'));
 const SixteenBitGamesPage = lazy(() => import('./pages/SixteenBitGamesPage'));
