@@ -1,44 +1,44 @@
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { ErrorMessage, Field, Formik, Form } from 'formik';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import { RegisterSchema } from 'helpers/validationSchemas/registerSchema';
-import { register } from 'myRedux/auth/operations';
+import { login } from 'myRedux/auth/operations';
+import { LoginSchema } from 'helpers/validationSchemas/loginSchema';
 
-import styles from './RegisterForm.module.css';
+import styles from './LoginForm.module.css';
 
-export const RegisterForm = () => {
+export const LoginForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, action) => {
-    dispatch(register(values));
+    dispatch(login(values))
+      .then(res => {
+        if (res.meta.requestStatus === 'rejected') {
+          throw new Error('Invalid email or password');
+        }
+        toast.info(`Welcome ${res.payload.user.name}`);
+      })
+      .catch(e => {
+        toast.error(e.message);
+      });
 
     action.resetForm();
   };
 
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>REGISTER</h2>
+      <h2 className={styles.title}>LOGIN</h2>
       <Formik
         initialValues={{
-          name: '',
           email: '',
           password: '',
         }}
-        validationSchema={RegisterSchema}
+        validationSchema={LoginSchema}
         onSubmit={handleSubmit}
       >
-        <Form className={styles.form} autoComplete="off">
-          <label className={styles.label}>
-            Username
-            <Field className={styles.input} type="text" name="name" />
-            <ErrorMessage
-              className={styles.errorName}
-              name="name"
-              component="span"
-            />
-          </label>
-
+        <Form className={styles.form} autoComplete="on">
           <label className={styles.label}>
             Email
             <Field className={styles.input} type="email" name="email" />
@@ -60,13 +60,13 @@ export const RegisterForm = () => {
           </label>
 
           <button className={styles.btn} type="submit">
-            CREATE ACCOUNT
+            LOGIN
           </button>
 
           <div className={styles.signWrapper}>
-            <p>Already have an account?</p>
-            <Link to="/login" className={styles.link}>
-              Log In
+            <p>Don't have an account?</p>
+            <Link to="/register" className={styles.link}>
+              Register
             </Link>
           </div>
         </Form>

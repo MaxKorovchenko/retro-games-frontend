@@ -14,7 +14,6 @@ export const register = createAsyncThunk(
   async (crd, { rejectWithValue }) => {
     try {
       const { data } = await axios.post('/api/auth/register', crd);
-      console.log(data);
       setToken(data.token);
       return data;
     } catch (e) {
@@ -23,19 +22,19 @@ export const register = createAsyncThunk(
   }
 );
 
-// export const login = createAsyncThunk(
-//   'auth/login',
-//   async (crd, { rejectWithValue }) => {
-//     try {
-//       const { data } = await axios.post('/users/login', crd);
-
-//       setToken(data.token);
-//       return data;
-//     } catch (e) {
-//       return rejectWithValue(e.message);
-//     }
-//   }
-// );
+export const login = createAsyncThunk(
+  'auth/login',
+  async (crd, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.post('/api/auth/login', crd);
+      console.log(data);
+      setToken(data.token);
+      return data;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  }
+);
 
 // export const logout = createAsyncThunk(
 //   'auth/logout',
