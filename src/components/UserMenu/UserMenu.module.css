@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+.text {
+  text-align: center;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.btn {
+  width: 110px;
+  height: 50px;
+  padding: 10px 14px;
+  border: 1px solid aliceblue;
+  border-radius: 6px;
+
+  font-weight: 700;
+  font-size: 18px;
+  background-color: transparent;
+  color: aliceblue;
+  user-select: none;
+
+  transition: 250ms ease-in-out;
+
+  &:hover {
+    background-color: #3737e0;
+    color: aliceblue;
+  }
+}
