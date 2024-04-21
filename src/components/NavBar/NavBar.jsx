@@ -1,8 +1,12 @@
 import { NavLink } from 'react-router-dom';
 
 import styles from './NavBar.module.css';
+import { useSelector } from 'react-redux';
+import { selectIsLoggedIn } from 'myRedux/auth/selectors';
 
 export const NavBar = () => {
+  const isLoggedIn = useSelector(selectIsLoggedIn);
+
   return (
     <nav className={styles.nav}>
       <NavLink className={styles.link} to="/">
@@ -14,9 +18,12 @@ export const NavBar = () => {
       <NavLink className={styles.link} to="16-bit">
         16-bit
       </NavLink>
-      <NavLink className={styles.link} to="favorites">
-        Favorite Games
-      </NavLink>
+
+      {isLoggedIn && (
+        <NavLink className={styles.link} to="favorites">
+          Favorite Games
+        </NavLink>
+      )}
     </nav>
   );
 };

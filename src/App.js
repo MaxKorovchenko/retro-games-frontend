@@ -1,9 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
+import axios from 'axios';
 
 import { Layout } from 'components/Layout/Layout';
+import { PublicRoute } from 'components/PublicRoute';
+import { PrivateRoute } from 'components/PrivateRoute';
 
-import axios from 'axios';
 const URL =
   process.env.NODE_ENV === 'development'
     ? 'http://localhost:3030'
@@ -28,9 +30,16 @@ export const App = () => {
         <Route path="8-bit" element={<EightBitGamesPage />} />
         <Route path="16-bit" element={<SixteenBitGamesPage />} />
         <Route path="games/:gameId" element={<GameDetailsPage />} />
-        <Route path="favorites" element={<FavoriteGames />} />
-        <Route path="register" element={<RegisterPage />} />
-        <Route path="login" element={<LoginPage />} />
+
+        <Route element={<PrivateRoute />}>
+          <Route path="favorites" element={<FavoriteGames />} />
+        </Route>
+
+        <Route element={<PublicRoute />}>
+          <Route path="register" element={<RegisterPage />} />
+          <Route path="login" element={<LoginPage />} />
+        </Route>
+
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
