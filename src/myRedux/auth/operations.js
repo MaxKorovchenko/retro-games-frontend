@@ -48,19 +48,19 @@ export const logout = createAsyncThunk(
   }
 );
 
-// export const refreshUser = createAsyncThunk(
-//   'auth/refreshUser',
-//   async (_, { getState, rejectWithValue }) => {
-//     const { token } = getState().auth;
+export const refreshUser = createAsyncThunk(
+  'auth/refreshUser',
+  async (_, { getState, rejectWithValue }) => {
+    const { token } = getState().auth;
 
-//     if (!token) return rejectWithValue('Unable to fetch user');
+    if (!token) return rejectWithValue('Unable to fetch user');
 
-//     try {
-//       setToken(token);
-//       const { data } = await axios.get('/users/current');
-//       return data;
-//     } catch (e) {
-//       return rejectWithValue(e.message);
-//     }
-//   }
-// );
+    try {
+      setToken(token);
+      const { data } = await axios.get('/api/auth/current');
+      return data;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  }
+);
