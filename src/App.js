@@ -17,7 +17,7 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const EightBitGamesPage = lazy(() => import('./pages/EightBitGamesPage'));
 const SixteenBitGamesPage = lazy(() => import('./pages/SixteenBitGamesPage'));
 const GameDetailsPage = lazy(() => import('./pages/GameDetailsPage'));
-const FavoriteGames = lazy(() => import('./pages/FavoriteGames'));
+const ProfilePage = lazy(() => import('./pages/ProfilePage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -32,7 +32,7 @@ export const App = () => {
         <Route path="games/:gameId" element={<GameDetailsPage />} />
 
         <Route element={<PrivateRoute />}>
-          <Route path="favorites" element={<FavoriteGames />} />
+          <Route path="profile" element={<ProfilePage />} />
         </Route>
 
         <Route element={<PublicRoute />}>

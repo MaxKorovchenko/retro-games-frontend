@@ -20,8 +20,8 @@ export const NavBar = () => {
       </NavLink>
 
       {isLoggedIn && (
-        <NavLink className={styles.link} to="favorites">
-          Favorite Games
+        <NavLink className={styles.link} to="profile">
+          Profile
         </NavLink>
       )}
     </nav>
