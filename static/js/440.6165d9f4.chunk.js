@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[440],{440:(e,r,s)=>{s.r(r),s.d(r,{default:()=>a});var t=s(579);const a=()=>(0,t.jsx)("div",{children:"FavoriteGames"})}}]);
-//# sourceMappingURL=440.6165d9f4.chunk.js.map

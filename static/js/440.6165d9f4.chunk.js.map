@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/440.6165d9f4.chunk.js","mappings":"qKAAA,MAIA,EAJsBA,KACbC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,iB","sources":["pages/FavoriteGames.jsx"],"sourcesContent":["const FavoriteGames = () => {\n  return <div>FavoriteGames</div>;\n};\n\nexport default FavoriteGames;\n"],"names":["FavoriteGames","_jsx","children"],"sourceRoot":""}
