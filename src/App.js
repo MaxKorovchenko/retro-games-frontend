@@ -8,6 +8,7 @@ import { PublicRoute } from 'components/PublicRoute';
 import { PrivateRoute } from 'components/PrivateRoute';
 import { selectIsRefreshing } from 'myRedux/auth/selectors';
 import { refreshUser } from 'myRedux/auth/operations';
+import { getAllGames } from 'myRedux/games/operations';
 
 const URL =
   process.env.NODE_ENV === 'development'
@@ -31,6 +32,10 @@ export const App = () => {
 
   useEffect(() => {
     dispatch(refreshUser());
+  }, [dispatch]);
+
+  useEffect(() => {
+    dispatch(getAllGames());
   }, [dispatch]);
 
   return (

@@ -1,18 +1,9 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
+
+import { selectGames } from 'myRedux/games/selectors';
 
 export const SixteenBitGames = () => {
-  const [games, setGames] = useState([]);
-
-  useEffect(() => {
-    const fetchGames = async () => {
-      const { data } = await axios.get('/api/games');
-      setGames(data);
-    };
-
-    fetchGames();
-  }, []);
-
+  const games = useSelector(selectGames);
   const SixteenBitGames = games.filter(game => game.platform === '16-bit');
 
   return (
