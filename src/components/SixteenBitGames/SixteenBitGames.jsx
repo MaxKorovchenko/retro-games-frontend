@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 
 import { selectGames } from 'myRedux/games/selectors';
+import { Link } from 'react-router-dom';
 
 export const SixteenBitGames = () => {
   const games = useSelector(selectGames);
@@ -9,7 +10,9 @@ export const SixteenBitGames = () => {
   return (
     <ul>
       {SixteenBitGames.map(({ _id, title }) => (
-        <li key={_id}>{title}</li>
+        <li key={_id}>
+          <Link to={`/games/${_id}`}>{title}</Link>
+        </li>
       ))}
     </ul>
   );
