@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[214],{421:(e,s,t)=>{t.d(s,{uC:()=>n});const n=e=>e.games.items},214:(e,s,t)=>{t.r(s),t.d(s,{default:()=>i});var n=t(421),r=t(3),d=t(216),a=t(579);const c=()=>{const{gameId:e}=(0,d.g)(),s=(0,r.d4)(n.uC),{title:t="",platform:c=""}=s.length&&s.find((s=>s._id===e));return(0,a.jsxs)("div",{children:[(0,a.jsx)("p",{children:t}),(0,a.jsx)("p",{children:c})]})},i=()=>(0,a.jsx)(c,{})}}]);
-//# sourceMappingURL=214.0c93e863.chunk.js.map
