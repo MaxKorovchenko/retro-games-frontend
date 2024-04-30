@@ -64,3 +64,17 @@ export const refreshUser = createAsyncThunk(
     }
   }
 );
+
+export const addToFavoriteGames = createAsyncThunk(
+  'auth/addToFavoriteGames',
+  async (gameId, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.patch('/api/auth/favoriteGames', { gameId });
+      console.log(data);
+
+      return data;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  }
+);
