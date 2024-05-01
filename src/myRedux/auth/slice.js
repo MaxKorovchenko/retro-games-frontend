@@ -1,6 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { login, logout, refreshUser, register } from './operations';
+import {
+  addToFavoriteGames,
+  login,
+  logout,
+  refreshUser,
+  register,
+} from './operations';
 
 const authSlice = createSlice({
   name: 'auth',
@@ -9,6 +15,8 @@ const authSlice = createSlice({
     token: null,
     isLoggedIn: false,
     isRefreshing: false,
+    isLoading: false,
+    error: null,
   },
   extraReducers: builder => {
     builder
@@ -40,6 +48,19 @@ const authSlice = createSlice({
         state.user = action.payload;
         state.isLoggedIn = true;
         state.isRefreshing = false;
+      })
+
+      .addCase(addToFavoriteGames.pending, state => {
+        state.isLoading = true;
+      })
+      .addCase(addToFavoriteGames.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload.message;
+      })
+      .addCase(addToFavoriteGames.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.error = null;
+        state.user.favoriteGames = action.payload.favoriteGames;
       });
   },
 });
