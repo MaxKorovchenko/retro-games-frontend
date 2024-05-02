@@ -70,8 +70,6 @@ export const addToFavoriteGames = createAsyncThunk(
   async (gameId, { rejectWithValue }) => {
     try {
       const { data } = await axios.patch('/api/auth/favoriteGames', { gameId });
-      console.log(data);
-
       return data;
     } catch (e) {
       return rejectWithValue(e.message);
