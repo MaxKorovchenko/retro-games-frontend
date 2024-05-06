@@ -11,7 +11,9 @@ export const SixteenBitGames = () => {
     <ul>
       {SixteenBitGames.map(({ _id, title }) => (
         <li key={_id}>
-          <Link to={`/games/${_id}`}>{title}</Link>
+          <Link to={`/games/${_id}`} style={{ color: 'white' }}>
+            {title}
+          </Link>
         </li>
       ))}
     </ul>
