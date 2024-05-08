@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[968],{968:(e,t,r)=>{r.r(t),r.d(t,{default:()=>d});var s=r(3),l=r(421),n=r(475),c=r(579);const i=()=>{const e=(0,s.d4)(l.uC).filter((e=>"16-bit"===e.platform));return(0,c.jsx)("ul",{children:e.map((e=>{let{_id:t,title:r}=e;return(0,c.jsx)("li",{children:(0,c.jsx)(n.N_,{to:"/games/".concat(t),style:{color:"white"},children:r})},t)}))})},d=()=>(0,c.jsx)("div",{children:(0,c.jsx)(i,{})})}}]);
+//# sourceMappingURL=968.08913425.chunk.js.map
