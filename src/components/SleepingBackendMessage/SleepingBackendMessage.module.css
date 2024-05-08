@@ -1,0 +1,12 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+
+  text-align: center;
+  font-size: 40px;
+  color: rgb(196, 162, 162);
+  background-color: rgb(84, 79, 70);
+}

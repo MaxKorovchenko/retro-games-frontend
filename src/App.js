@@ -9,6 +9,8 @@ import { PrivateRoute } from 'components/PrivateRoute';
 import { selectIsRefreshing } from 'myRedux/auth/selectors';
 import { refreshUser } from 'myRedux/auth/operations';
 import { getAllGames } from 'myRedux/games/operations';
+import { selectIsLoading } from 'myRedux/games/selectors';
+import { SleepingBackendMessage } from 'components/SleepingBackendMessage/SleepingBackendMessage';
 
 const URL =
   process.env.NODE_ENV === 'development'
@@ -28,6 +30,7 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 export const App = () => {
   const isRefreshing = useSelector(selectIsRefreshing);
+  const isLoading = useSelector(selectIsLoading);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -38,7 +41,7 @@ export const App = () => {
     dispatch(getAllGames());
   }, [dispatch]);
 
-  return (
+  return !isLoading ? (
     !isRefreshing && (
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -60,5 +63,7 @@ export const App = () => {
         </Route>
       </Routes>
     )
+  ) : (
+    <SleepingBackendMessage />
   );
 };
