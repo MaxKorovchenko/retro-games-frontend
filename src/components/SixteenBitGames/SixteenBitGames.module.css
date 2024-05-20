@@ -1,0 +1,8 @@
+.link {
+  color: white;
+
+  &:hover,
+  &:focus {
+    color: rgb(62, 29, 93);
+  }
+}

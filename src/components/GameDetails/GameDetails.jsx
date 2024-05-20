@@ -11,6 +11,9 @@ import {
 } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
 
+import cover8 from 'assets/image/cover8.jpg';
+import cover16 from 'assets/image/cover16.jpg';
+
 export const GameDetails = () => {
   const { gameId } = useParams();
   const games = useSelector(selectGames);
@@ -19,8 +22,15 @@ export const GameDetails = () => {
   const isLoading = useSelector(selectIsLoading);
   const dispatch = useDispatch();
 
-  const { title = '', platform = '' } =
-    games.length && games.find(game => game._id === gameId);
+  const {
+    title = '',
+    platform = '',
+    //coverImageURL = cover8,
+    description = 'Retro game',
+    genre = 'Undefined',
+    numberOfPlayers = 1,
+    releaseYear = 'Undefined',
+  } = games.length && games.find(game => game._id === gameId);
 
   const shouldDisableBtn =
     !isLoggedIn || isLoading || favoriteGames.includes(gameId);
@@ -31,9 +41,18 @@ export const GameDetails = () => {
     );
 
   return (
-    <div>
+    <div style={{ color: 'darkblue' }}>
       <p>{title}</p>
-      <p>{platform}</p>
+      <p>Platform: {platform}</p>
+      <img
+        src={platform === '8-bit' ? cover8 : cover16}
+        alt="retro game"
+        width={320}
+      />
+      <p>Genre: {genre}</p>
+      <p>Number of Players: {numberOfPlayers}</p>
+      <p>Release Year: {releaseYear}</p>
+      <p>{description}</p>
       <button
         type="button"
         disabled={shouldDisableBtn}
