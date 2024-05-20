@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[275],{275:(e,t,r)=>{r.r(t),r.d(t,{default:()=>d});var s=r(3),n=r(475),l=r(421);const a="SixteenBitGames_link__2lOyx";var i=r(579);const c=()=>{const e=(0,s.d4)(l.uC).filter((e=>"16-bit"===e.platform));return(0,i.jsx)("ul",{children:e.map((e=>{let{_id:t,title:r}=e;return(0,i.jsx)("li",{children:(0,i.jsx)(n.N_,{to:"/games/".concat(t),className:a,children:r})},t)}))})},d=()=>(0,i.jsx)("div",{children:(0,i.jsx)(c,{})})}}]);
+//# sourceMappingURL=275.d6c5e068.chunk.js.map

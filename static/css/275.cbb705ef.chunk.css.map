@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/275.cbb705ef.chunk.css","mappings":"AAAA,6BACE,UAAY,CAEZ,gBAEE,aACF,CACF","sources":["components/SixteenBitGames/SixteenBitGames.module.css"],"sourcesContent":[".link {\n  color: white;\n\n  &:hover,\n  &:focus {\n    color: rgb(62, 29, 93);\n  }\n}\n"],"names":[],"sourceRoot":""}
