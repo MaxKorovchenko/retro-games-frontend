@@ -13,6 +13,10 @@ import { selectGames } from 'myRedux/games/selectors';
 
 import cover8 from 'assets/image/cover8.jpg';
 import cover16 from 'assets/image/cover16.jpg';
+import icon8 from 'assets/image/icon8.png';
+import icon16 from 'assets/image/icon16.png';
+
+import styles from './GameDetails.module.css';
 
 export const GameDetails = () => {
   const { gameId } = useParams();
@@ -41,17 +45,22 @@ export const GameDetails = () => {
     );
 
   return (
-    <div style={{ color: 'darkblue' }}>
-      <p>{title}</p>
-      <p>Platform: {platform}</p>
-      <img
-        src={platform === '8-bit' ? cover8 : cover16}
-        alt="retro game"
-        width={320}
-      />
-      <p>Genre: {genre}</p>
-      <p>Number of Players: {numberOfPlayers}</p>
-      <p>Release Year: {releaseYear}</p>
+    <div className={styles.container}>
+      <div className={styles.wrapper}>
+        <img
+          src={platform === '8-bit' ? cover8 : cover16}
+          alt="retro game"
+          width={320}
+        />
+
+        <div>
+          <h2>{title}</h2>
+          <p>Genre: {genre}</p>
+          <p>Number of Players: {numberOfPlayers}</p>
+          <p>Release Year: {releaseYear}</p>
+        </div>
+      </div>
+
       <p>{description}</p>
       <button
         type="button"
@@ -60,6 +69,13 @@ export const GameDetails = () => {
       >
         Add to favorite
       </button>
+
+      <img
+        className={styles.icon}
+        src={platform === '8-bit' ? icon8 : icon16}
+        alt="console"
+        width={120}
+      />
     </div>
   );
 };
