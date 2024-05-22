@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useRef } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,6 +26,9 @@ export const GameDetails = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const isLoading = useSelector(selectIsLoading);
   const dispatch = useDispatch();
+  const location = useLocation();
+
+  const backLinkRef = useRef(location.state?.from ?? '/');
 
   const {
     title = '',
@@ -46,6 +50,10 @@ export const GameDetails = () => {
 
   return (
     <div className={styles.container}>
+      <Link to={backLinkRef.current} className={styles.link}>
+        &lArr; Back to games
+      </Link>
+
       <div className={styles.wrapper}>
         <img
           src={platform === '8-bit' ? cover8 : cover16}
