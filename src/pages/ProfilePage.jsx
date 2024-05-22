@@ -3,7 +3,7 @@ import { FavoriteGames } from 'components/FavoriteGames/FavoriteGames';
 const ProfilePage = () => {
   return (
     <>
-      <h2>ProfilePage</h2>
+      {/* <h2>Profile</h2> */}
       <FavoriteGames />
     </>
   );

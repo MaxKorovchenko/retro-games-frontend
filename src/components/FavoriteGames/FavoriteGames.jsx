@@ -1,6 +1,9 @@
+import { useSelector } from 'react-redux';
+
 import { selectUser } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
-import { useSelector } from 'react-redux';
+
+import styles from './FavoriteGames.module.css';
 
 export const FavoriteGames = () => {
   const games = useSelector(selectGames);
@@ -15,9 +18,9 @@ export const FavoriteGames = () => {
   );
 
   return (
-    <div>
+    <div className={styles.container}>
       <div>
-        <h3>My Favorite 8-Bit Games</h3>
+        <h2>My Favorite 8-Bit Games</h2>
         {userFavorites8Bit.length > 0 ? (
           <ul>
             {userFavorites8Bit.map(({ _id, title }) => (
@@ -32,7 +35,7 @@ export const FavoriteGames = () => {
       </div>
 
       <div>
-        <h3>My Favorite 16-Bit Games</h3>
+        <h2>My Favorite 16-Bit Games</h2>
         {userFavorites16Bit.length > 0 ? (
           <ul>
             {userFavorites16Bit.map(({ _id, title }) => (

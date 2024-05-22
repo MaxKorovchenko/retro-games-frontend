@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  gap: 150px;
+
+  margin: 20px;
+
+  color: rgb(223, 227, 232);
+
+  & ul {
+    list-style: none;
+  }
+}
