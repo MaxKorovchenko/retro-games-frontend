@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { selectUser } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
+import { FavoriteGameItem } from 'components/FavoriteGameItem/FavoriteGameItem';
 
 import styles from './FavoriteGames.module.css';
 
@@ -19,33 +20,33 @@ export const FavoriteGames = () => {
 
   return (
     <div className={styles.container}>
-      <div>
-        <h2>My Favorite 8-Bit Games</h2>
+      <div className={styles.list}>
+        <h2 className={styles.title}>My Favorite 8-Bit Games</h2>
         {userFavorites8Bit.length > 0 ? (
           <ul>
             {userFavorites8Bit.map(({ _id, title }) => (
-              <li key={_id}>
-                <p>{title}</p>
+              <li className={styles.item} key={_id}>
+                <FavoriteGameItem gameId={_id} title={title} />
               </li>
             ))}
           </ul>
         ) : (
-          <p>Your 8-bit games will be here</p>
+          <p style={{ color: 'grey' }}>Your 8-bit games will be here</p>
         )}
       </div>
 
-      <div>
-        <h2>My Favorite 16-Bit Games</h2>
+      <div className={styles.list}>
+        <h2 className={styles.title}>My Favorite 16-Bit Games</h2>
         {userFavorites16Bit.length > 0 ? (
           <ul>
             {userFavorites16Bit.map(({ _id, title }) => (
-              <li key={_id}>
-                <p>{title}</p>
+              <li className={styles.item} key={_id}>
+                <FavoriteGameItem gameId={_id} title={title} />
               </li>
             ))}
           </ul>
         ) : (
-          <p>Your 16-bit games will be here</p>
+          <p style={{ color: 'grey' }}>Your 16-bit games will be here</p>
         )}
       </div>
     </div>

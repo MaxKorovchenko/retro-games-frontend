@@ -45,7 +45,7 @@ export const GameDetails = () => {
 
   const handleAddToFavoriteGames = () =>
     dispatch(addToFavoriteGames(gameId)).then(() =>
-      toast.success(`${title} successfully added to your favorites`)
+      toast.success(`${title} was successfully added to your favorites`)
     );
 
   return (

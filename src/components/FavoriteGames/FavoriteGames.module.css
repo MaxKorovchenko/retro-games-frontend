@@ -1,12 +1,31 @@
 .container {
   display: flex;
-  gap: 150px;
+  justify-content: space-around;
 
-  margin: 20px;
+  width: 1200px;
+  margin: 20px 0;
 
-  color: rgb(223, 227, 232);
+  /* outline: 1px solid red; */
 
   & ul {
     list-style: none;
   }
+}
+
+.list {
+  width: 500px;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  color: rgb(242, 245, 242);
+}
+
+.item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+
+  color: rgb(41, 40, 40);
+  font-weight: 700;
 }

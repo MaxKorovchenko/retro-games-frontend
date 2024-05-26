@@ -76,3 +76,15 @@ export const addToFavoriteGames = createAsyncThunk(
     }
   }
 );
+
+export const removeFromFavoriteGames = createAsyncThunk(
+  'auth/removeFromFavoriteGames',
+  async (gameId, { rejectWithValue }) => {
+    try {
+      const { data } = await axios.delete(`/api/auth/favoriteGames/${gameId}`);
+      return data;
+    } catch (e) {
+      return rejectWithValue(e.message);
+    }
+  }
+);

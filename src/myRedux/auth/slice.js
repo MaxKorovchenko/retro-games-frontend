@@ -6,6 +6,7 @@ import {
   logout,
   refreshUser,
   register,
+  removeFromFavoriteGames,
 } from './operations';
 
 const authSlice = createSlice({
@@ -32,7 +33,7 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
       })
 
-      .addCase(logout.fulfilled, (state, action) => {
+      .addCase(logout.fulfilled, state => {
         state.user = {};
         state.token = null;
         state.isLoggedIn = false;
@@ -58,6 +59,19 @@ const authSlice = createSlice({
         state.error = action.payload.message;
       })
       .addCase(addToFavoriteGames.fulfilled, (state, action) => {
+        state.isLoading = false;
+        state.error = null;
+        state.user.favoriteGames = action.payload.favoriteGames;
+      })
+
+      .addCase(removeFromFavoriteGames.pending, state => {
+        state.isLoading = true;
+      })
+      .addCase(removeFromFavoriteGames.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload.message;
+      })
+      .addCase(removeFromFavoriteGames.fulfilled, (state, action) => {
         state.isLoading = false;
         state.error = null;
         state.user.favoriteGames = action.payload.favoriteGames;
