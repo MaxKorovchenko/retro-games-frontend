@@ -11,6 +11,7 @@ import {
   selectUser,
 } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
+import { SlickSlider } from 'components/SlickSlider/SlickSlider';
 
 import cover8 from 'assets/image/cover8.jpg';
 import cover16 from 'assets/image/cover16.jpg';
@@ -18,6 +19,8 @@ import icon8 from 'assets/image/icon8.png';
 import icon16 from 'assets/image/icon16.png';
 
 import styles from './GameDetails.module.css';
+
+const gallery = [cover16, cover8, icon8, icon16];
 
 export const GameDetails = () => {
   const { gameId } = useParams();
@@ -84,6 +87,8 @@ export const GameDetails = () => {
         alt="console"
         width={120}
       />
+
+      <SlickSlider items={gallery} title={title} />
     </div>
   );
 };
