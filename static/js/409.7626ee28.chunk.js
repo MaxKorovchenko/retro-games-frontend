@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfrontend_retro_games=self.webpackChunkfrontend_retro_games||[]).push([[409],{4409:(e,r,n)=>{n.r(r),n.d(r,{default:()=>t});var s=n(579);const t=()=>(0,s.jsx)("div",{children:"NotFoundPage"})}}]);
+//# sourceMappingURL=409.7626ee28.chunk.js.map
