@@ -14,13 +14,11 @@ import { selectGames } from 'myRedux/games/selectors';
 import { SlickSlider } from 'components/SlickSlider/SlickSlider';
 
 import cover8 from 'assets/image/cover8.jpg';
-import cover16 from 'assets/image/cover16.jpg';
+// import cover16 from 'assets/image/cover16.jpg';
 import icon8 from 'assets/image/icon8.png';
 import icon16 from 'assets/image/icon16.png';
 
 import styles from './GameDetails.module.css';
-
-const gallery = [cover16, cover8, icon8, icon16];
 
 export const GameDetails = () => {
   const { gameId } = useParams();
@@ -36,11 +34,12 @@ export const GameDetails = () => {
   const {
     title = '',
     platform = '',
-    //coverImageURL = cover8,
+    coverImageURL = cover8,
     description = 'Retro game',
     genre = 'Undefined',
     numberOfPlayers = 1,
     releaseYear = 'Undefined',
+    gallery = [],
   } = games.length && games.find(game => game._id === gameId);
 
   const shouldDisableBtn =
@@ -58,11 +57,7 @@ export const GameDetails = () => {
       </Link>
 
       <div className={styles.wrapper}>
-        <img
-          src={platform === '8-bit' ? cover8 : cover16}
-          alt="retro game"
-          width={320}
-        />
+        <img src={coverImageURL} alt="retro game" width={320} />
 
         <div>
           <h2>{title}</h2>

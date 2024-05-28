@@ -24,7 +24,7 @@ export const SlickSlider = ({ title, items }) => {
             <img
               src={image}
               alt={`${title} screenshot ${index + 1}`}
-              width={320}
+              width={640}
             />
           </div>
         ))}
