@@ -1,18 +1,27 @@
 .container {
   position: relative;
-  width: 800px;
+  width: 1000px;
   padding: 100px 40px;
-  margin: 20px;
-  border: 1px solid blue;
+  margin: 20px 0;
+  /* border: 1px solid blue; */
   border-radius: 10px;
-  color: rgb(242, 239, 245);
+
+  background-color: #000;
+  color: #fff;
+  /* padding: 20px; */
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
 }
 
 .wrapper {
   display: flex;
   gap: 30px;
 
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+.wrapper img {
+  border: 5px solid #fff;
 }
 
 .icon {
@@ -29,5 +38,46 @@
   border: 1px solid black;
   border-radius: 6px;
 
-  background-color: rgb(189, 205, 220);
+  color: #00ff00;
+  font-size: 18px;
+
+  &:hover {
+    color: #ff0000;
+  }
+}
+
+.wrapper img {
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #ffcc00;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.btn {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', cursive;
+  transition: background-color 0.3s;
+
+  &:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled):hover {
+    background-color: #ff0000;
+  }
 }

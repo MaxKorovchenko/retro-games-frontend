@@ -69,6 +69,7 @@ export const GameDetails = () => {
 
       <p>{description}</p>
       <button
+        className={styles.btn}
         type="button"
         disabled={shouldDisableBtn}
         onClick={handleAddToFavoriteGames}
