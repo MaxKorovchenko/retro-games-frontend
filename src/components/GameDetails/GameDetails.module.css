@@ -1,14 +1,12 @@
 .container {
   position: relative;
   width: 1000px;
-  padding: 100px 40px;
-  margin: 20px 0;
-  /* border: 1px solid blue; */
-  border-radius: 10px;
+  padding: 100px 40px 60px 40px;
+  /* margin: 20px 0; */
 
-  background-color: #000;
+  border-radius: 10px;
+  background-color: #000000;
   color: #fff;
-  /* padding: 20px; */
   font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
@@ -20,56 +18,58 @@
   margin-bottom: 20px;
 }
 
-.wrapper img {
+.gameInfo {
+  width: 570px;
+}
+
+.cartridgeImg {
+  width: 320px;
+  height: 240px;
   border: 5px solid #fff;
 }
 
-.icon {
+.platformIcon {
   position: absolute;
   top: 5px;
   right: 10px;
 }
 
-.link {
+.backLink {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 20px;
+  left: 15px;
   padding: 5px;
-  border: 1px solid black;
-  border-radius: 6px;
 
+  /* border: 1px solid black; */
+  /* border-radius: 6px; */
   color: #00ff00;
-  font-size: 18px;
+  font-size: 16px;
 
   &:hover {
     color: #ff0000;
   }
 }
 
-.wrapper img {
-  border: 5px solid #fff;
+.gameTitle {
+  font-size: 24px;
+  color: #ffcc00;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  color: #ffcc00;
-  margin: 10px 0;
-}
-
-p {
+.text {
   font-size: 18px;
-  margin: 5px 0;
+  margin-bottom: 15px;
 }
 
 .btn {
-  background-color: #00ff00;
-  color: #000;
   border: none;
   padding: 10px 20px;
+  margin-bottom: 20px;
+
   font-size: 16px;
-  cursor: pointer;
   font-family: 'Press Start 2P', cursive;
+  background-color: #00ff00;
+  color: #000;
   transition: background-color 0.3s;
 
   &:disabled {

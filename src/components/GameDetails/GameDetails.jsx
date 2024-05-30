@@ -52,22 +52,28 @@ export const GameDetails = () => {
 
   return (
     <div className={styles.container}>
-      <Link to={backLinkRef.current} className={styles.link}>
+      <Link to={backLinkRef.current} className={styles.backLink}>
         &lArr; Back to games
       </Link>
 
       <div className={styles.wrapper}>
-        <img src={coverImageURL} alt="retro game" width={320} />
+        <img
+          className={styles.cartridgeImg}
+          src={coverImageURL}
+          alt="retro game"
+          width={320}
+          height={240}
+        />
 
-        <div>
-          <h2>{title}</h2>
-          <p>Genre: {genre}</p>
-          <p>Number of Players: {numberOfPlayers}</p>
-          <p>Release Year: {releaseYear}</p>
+        <div className={styles.gameInfo}>
+          <h2 className={styles.gameTitle}>{title}</h2>
+          <p className={styles.text}>Genre: {genre}</p>
+          <p className={styles.text}>Number of Players: {numberOfPlayers}</p>
+          <p className={styles.text}>Release Year: {releaseYear}</p>
         </div>
       </div>
 
-      <p>{description}</p>
+      <p className={styles.text}>{description}</p>
       <button
         className={styles.btn}
         type="button"
@@ -78,7 +84,7 @@ export const GameDetails = () => {
       </button>
 
       <img
-        className={styles.icon}
+        className={styles.platformIcon}
         src={platform === '8-bit' ? icon8 : icon16}
         alt="console"
         width={120}

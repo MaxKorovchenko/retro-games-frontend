@@ -17,14 +17,15 @@ export const SlickSlider = ({ title, items }) => {
 
   return (
     <div>
-      <h3>Gallery</h3>
+      <h3 className="galleryTitle">Gallery</h3>
       <Slider {...settings}>
         {items.map((image, index) => (
           <div key={index}>
             <img
               src={image}
               alt={`${title} screenshot ${index + 1}`}
-              width={640}
+              width={480}
+              height={336}
             />
           </div>
         ))}
