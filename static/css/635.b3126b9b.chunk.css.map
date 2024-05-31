@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/635.b3126b9b.chunk.css","mappings":"AAAA,2BACE,UAAY,CAEZ,gBAEE,aACF,CACF","sources":["components/EightBitGames/EightBitGames.module.css"],"sourcesContent":[".link {\n  color: white;\n\n  &:hover,\n  &:focus {\n    color: rgb(62, 29, 93);\n  }\n}\n"],"names":[],"sourceRoot":""}
