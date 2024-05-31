@@ -11,7 +11,7 @@ export const EightBitGames = () => {
   const eightBitGames = games.filter(game => game.platform === '8-bit');
 
   return (
-    <ul>
+    <ul className={styles.list}>
       {eightBitGames.map(({ _id, title }) => (
         <li key={_id}>
           <Link

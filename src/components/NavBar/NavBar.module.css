@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   display: flex;
   gap: 40px;
 }
@@ -19,5 +19,35 @@
   &:global(.active) {
     background-color: #145c9e;
     color: aliceblue;
+  }
+} */
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.link {
+  color: #ffcc00;
+  font-size: 18px;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  background-color: #1b1b32;
+
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: #ff6600;
+    color: #fff;
+  }
+
+  &.active {
+    background-color: #ff6600;
+    color: #fff;
   }
 }

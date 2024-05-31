@@ -1,8 +1,30 @@
 .link {
-  color: white;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px 0;
+  background-color: #000000;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  transition: all 0.3s ease-in-out;
+}
 
-  &:hover,
-  &:focus {
-    color: rgb(62, 29, 93);
-  }
+.link:hover,
+.link:focus {
+  color: #000000;
+  background-color: #00ff00;
+  border-color: #00ff00;
+  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+}
+
+.list {
+  list-style: none;
+  text-align: center;
+}
+
+.list li {
+  margin: 10px 0;
 }

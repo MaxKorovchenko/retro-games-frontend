@@ -11,7 +11,7 @@ export const SixteenBitGames = () => {
   const SixteenBitGames = games.filter(game => game.platform === '16-bit');
 
   return (
-    <ul>
+    <ul className={styles.list}>
       {SixteenBitGames.map(({ _id, title }) => (
         <li key={_id}>
           <Link
