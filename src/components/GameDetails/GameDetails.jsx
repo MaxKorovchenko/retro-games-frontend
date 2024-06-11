@@ -50,8 +50,11 @@ export const GameDetails = () => {
       toast.success(`${title} was successfully added to your favorites`)
     );
 
+  const isPlatform8Bit = platform === '8-bit';
+  const platformClass = isPlatform8Bit ? styles.dendy : styles.sega;
+
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${platformClass}`}>
       <Link to={backLinkRef.current} className={styles.backLink}>
         &lArr; Back to games
       </Link>
@@ -85,7 +88,7 @@ export const GameDetails = () => {
 
       <img
         className={styles.platformIcon}
-        src={platform === '8-bit' ? icon8 : icon16}
+        src={isPlatform8Bit ? icon8 : icon16}
         alt="console"
         width={120}
       />
