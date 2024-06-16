@@ -17,6 +17,8 @@
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+
+  border: 2px solid rgb(237, 240, 237);
 }
 
 .slick-prev,
@@ -42,7 +44,11 @@
 
 .slick-dots li button:before {
   font-size: 16px;
-  color: rgb(232, 225, 225);
+  color: rgb(255, 255, 255);
+}
+
+.slick-dots li.slick-active button:before {
+  color: rgb(25, 200, 51);
 }
 
 .slick-dots {
