@@ -31,7 +31,7 @@ export const FavoriteGames = () => {
             ))}
           </ul>
         ) : (
-          <p style={{ color: 'grey' }}>Your 8-bit games will be here</p>
+          <p>Your 8-bit games will be here</p>
         )}
       </div>
 
@@ -46,7 +46,7 @@ export const FavoriteGames = () => {
             ))}
           </ul>
         ) : (
-          <p style={{ color: 'grey' }}>Your 16-bit games will be here</p>
+          <p>Your 16-bit games will be here</p>
         )}
       </div>
     </div>

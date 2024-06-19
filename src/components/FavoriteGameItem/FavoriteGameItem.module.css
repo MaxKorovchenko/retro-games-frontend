@@ -1,4 +1,18 @@
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: #ff0000;
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #ffcc00;
+  }
 }

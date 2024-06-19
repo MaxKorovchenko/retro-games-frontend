@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaTrashAlt } from 'react-icons/fa';
 
 import { removeFromFavoriteGames } from 'myRedux/auth/operations';
 
@@ -18,8 +19,12 @@ export const FavoriteGameItem = ({ gameId, title }) => {
   return (
     <div className={styles.wrapper}>
       <p>{title}</p>
-      <button type="button" onClick={handleFavoriteGameDelete}>
-        X
+      <button
+        className={styles.deleteButton}
+        type="button"
+        onClick={handleFavoriteGameDelete}
+      >
+        <FaTrashAlt />
       </button>
     </div>
   );
