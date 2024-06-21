@@ -4,9 +4,6 @@
   padding-left: 15px;
   padding-right: 15px;
 
-  /* border: 3px solid #00ff00;
-  box-shadow: 0 0 10px #00ff00; */
-  /* background: linear-gradient(135deg, #16222a 0%, #3a6073 100%); */
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 
@@ -17,6 +14,13 @@
   @media (min-width: 1200px) {
     max-width: 1230px;
   }
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #ffcc00;
+  font-size: 24px;
+  text-shadow: 2px 2px #000;
 }
 
 .list {
@@ -33,26 +37,19 @@
   }
 }
 
-.title {
-  margin-bottom: 20px;
-  color: #ffcc00;
-  font-size: 24px;
-  text-shadow: 2px 2px #000;
-}
-
 .item {
   margin-bottom: 15px;
   padding: 10px;
   border-bottom: 1px solid rgb(37, 187, 59);
-  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
-  color: rgb(234, 222, 222);
+  background: linear-gradient(135deg, #0b0a10 0%, #7b7694 100%);
+  color: rgb(245, 241, 241);
   font-weight: 700;
   font-size: 18px;
   box-shadow: 0 0 5px #00ff00;
   transition: background 0.3s, color 0.3s;
 
   &:hover {
-    background: linear-gradient(135deg, #928dab 0%, #1f1c2c 100%);
+    background: linear-gradient(135deg, #5d577b 0%, #1f1c2c 100%);
     color: #ffcc00;
   }
 }
