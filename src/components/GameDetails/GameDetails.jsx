@@ -19,6 +19,7 @@ import icon8 from 'assets/image/icon8.png';
 import icon16 from 'assets/image/icon16.png';
 
 import styles from './GameDetails.module.css';
+import Emulator from 'components/Emulator/Emulator';
 
 export const GameDetails = () => {
   const { gameId } = useParams();
@@ -40,6 +41,7 @@ export const GameDetails = () => {
     numberOfPlayers = 1,
     releaseYear = 'Undefined',
     gallery = [],
+    romName = 'Aladdin.bin',
   } = games.length && games.find(game => game._id === gameId);
 
   const shouldDisableBtn =
@@ -94,6 +96,8 @@ export const GameDetails = () => {
       />
 
       <SlickSlider items={gallery} title={title} />
+
+      <Emulator romName={romName} isPlatform8Bit={isPlatform8Bit} />
     </div>
   );
 };
