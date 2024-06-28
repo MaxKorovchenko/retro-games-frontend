@@ -2,14 +2,35 @@ import { useEffect, useRef } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
-// import icon16 from 'assets/image/icon16.png';
+import emuCover1 from 'assets/image/emu/emu1.webp';
+import emuCover2 from 'assets/image/emu/emu2.webp';
+import emuCover3 from 'assets/image/emu/emu3.webp';
+import emuCover4 from 'assets/image/emu/emu4.webp';
+import emuCover5 from 'assets/image/emu/emu5.webp';
+import emuCover6 from 'assets/image/emu/emu6.webp';
+import emuCover7 from 'assets/image/emu/emu7.webp';
+import { getRandomNumber } from 'helpers/getRandomNumber';
+
+import styles from './Emulator.module.css';
+
+const covers = [
+  emuCover1,
+  emuCover2,
+  emuCover3,
+  emuCover4,
+  emuCover5,
+  emuCover6,
+  emuCover7,
+];
+
+const randomCover = covers[getRandomNumber()];
 
 const Emulator = ({ romName, isPlatform8Bit }) => {
   const emulatorRef = useRef(null);
 
   useEffect(() => {
     const firebaseConfig = {
-      apiKey: 'AIzaSyAMNoqZgA2HNQ09fIHeHgL19rdz8_c2lbw',
+      apiKey: 'AIzaSyAMNoqZgA4HNQ09fIHeHgL19rdz8_c2lbw',
       authDomain: 'retro-games-1985.firebaseapp.com',
       projectId: 'retro-games-1985',
       storageBucket: 'retro-games-1985.appspot.com',
@@ -46,7 +67,7 @@ const Emulator = ({ romName, isPlatform8Bit }) => {
       window.NepZoom = 'enable';
       window.NepMaxWidth = '1100px';
       window.NepLang = 'en';
-      window.gameUrl = url;
+      window.boxartimg = `<img src="${randomCover}" alt="emu cover" style=" width: 100%; height: auto; " />`;
 
       const script = document.createElement('script');
       script.src = 'https://mem.neptunjs.com/njs/njsLoader.js';
@@ -55,7 +76,7 @@ const Emulator = ({ romName, isPlatform8Bit }) => {
     });
   }, [romName, isPlatform8Bit]);
 
-  return <div id="emu" ref={emulatorRef}></div>;
+  return <div className={styles.emu} id="emu" ref={emulatorRef}></div>;
 };
 
 export default Emulator;
