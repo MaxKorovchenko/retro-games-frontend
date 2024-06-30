@@ -43,7 +43,7 @@ export const App = () => {
     dispatch(getAllGames());
   }, [dispatch]);
 
-  return isLoading ? (
+  return !isLoading ? (
     !isRefreshing && (
       <Routes>
         <Route path="/" element={<Layout />}>
