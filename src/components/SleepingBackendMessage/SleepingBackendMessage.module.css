@@ -16,6 +16,8 @@
   border: 4px solid #00ff00;
   background-color: #000000;
   box-shadow: 0 0 30px #00ff00 inset;
+
+  background-image: url('assets/image/sleeping-back/bg.webp');
 }
 
 .message {
@@ -33,7 +35,7 @@
   width: 480px;
   height: 240px;
 
-  animation: moveImage16 14s linear infinite;
+  animation: moveImage16 15s linear infinite;
 }
 
 @keyframes moveImage16 {
@@ -53,7 +55,7 @@
   width: 480px;
   height: 240px;
 
-  animation: moveImage8 14s linear infinite;
+  animation: moveImage8 15s linear infinite;
 }
 
 @keyframes moveImage8 {
@@ -74,13 +76,5 @@
 }
 
 .delay2 {
-  animation-delay: 2s;
-}
-
-.delay3 {
-  animation-delay: 3s;
-}
-
-.delay4 {
-  animation-delay: 4s;
+  animation-delay: 10s;
 }

@@ -1,12 +1,14 @@
 import rr from 'assets/image/sleeping-back/rr.webp';
 import sonic from 'assets/image/sleeping-back/sonic.webp';
+import jim from 'assets/image/sleeping-back/jim.webp';
 import dd from 'assets/image/sleeping-back/darkwing-duck.webp';
 import mario from 'assets/image/sleeping-back/mario.webp';
+import chipDale from 'assets/image/sleeping-back/chip-dale.webp';
 
 import styles from './SleepingBackendMessage.module.css';
 
-const images16 = [rr, sonic];
-const images8 = [dd, mario];
+const images16 = [rr, sonic, jim];
+const images8 = [dd, mario, chipDale];
 
 export const SleepingBackendMessage = () => {
   return (
