@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -22,6 +22,8 @@ import styles from './GameDetails.module.css';
 import Emulator from 'components/Emulator/Emulator';
 
 export const GameDetails = () => {
+  const [showCheats, setShowCheats] = useState(false);
+
   const { gameId } = useParams();
   const games = useSelector(selectGames);
   const { favoriteGames } = useSelector(selectUser);
@@ -42,6 +44,7 @@ export const GameDetails = () => {
     releaseYear = 'Undefined',
     gallery = [],
     romName = 'Aladdin.bin',
+    cheats = 'No cheats available',
   } = games.length && games.find(game => game._id === gameId);
 
   const shouldDisableBtn =
@@ -54,6 +57,10 @@ export const GameDetails = () => {
 
   const isPlatform8Bit = platform === '8-bit';
   const platformClass = isPlatform8Bit ? styles.dendy : styles.sega;
+
+  const toggleCheatsBtn = () => {
+    setShowCheats(prevState => !prevState);
+  };
 
   return (
     <div className={`${styles.container} ${platformClass}`}>
@@ -80,7 +87,7 @@ export const GameDetails = () => {
 
       <p className={styles.text}>{description}</p>
       <button
-        className={styles.btn}
+        className={styles.addBtn}
         type="button"
         disabled={shouldDisableBtn}
         onClick={handleAddToFavoriteGames}
@@ -98,6 +105,12 @@ export const GameDetails = () => {
       <SlickSlider items={gallery} title={title} />
 
       <Emulator romName={romName} isPlatform8Bit={isPlatform8Bit} />
+
+      <button className={styles.cheatsBtn} onClick={toggleCheatsBtn}>
+        {showCheats ? 'Hide' : 'Show'} codes and cheats
+      </button>
+
+      {showCheats && <pre className={styles.cheats}>{cheats}</pre>}
     </div>
   );
 };

@@ -3,7 +3,6 @@
   margin: 20px auto;
   padding-left: 15px;
   padding-right: 15px;
-
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 
@@ -20,36 +19,31 @@
   margin-bottom: 20px;
   color: #ffcc00;
   font-size: 24px;
-  text-shadow: 2px 2px #000;
+  text-shadow: 1px 1px #000, -1px -1px #000;
 }
 
 .list {
   width: 100%;
-
   padding: 20px;
-
-  background: linear-gradient(135deg, #2c5364 0%, #0f2027 100%);
+  background-color: #1a1a1d;
   border-radius: 10px;
-  box-shadow: 0 0 10px #00ff00;
-
-  &:not(:last-child) {
-    margin-bottom: 40px;
-  }
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  margin-bottom: 40px;
 }
 
 .item {
   margin-bottom: 15px;
   padding: 10px;
-  border-bottom: 1px solid rgb(37, 187, 59);
-  background: linear-gradient(135deg, #0b0a10 0%, #7b7694 100%);
-  color: rgb(245, 241, 241);
+  border-bottom: 1px solid rgba(37, 187, 59, 0.5);
+  background-color: #131317;
+  color: #f5f1f1;
   font-weight: 700;
-  font-size: 18px;
-  box-shadow: 0 0 5px #00ff00;
-  transition: background 0.3s, color 0.3s;
+  font-size: 16px;
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+  transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background: linear-gradient(135deg, #5d577b 0%, #1f1c2c 100%);
+    background-color: #2d2c3b;
     color: #ffcc00;
   }
 }

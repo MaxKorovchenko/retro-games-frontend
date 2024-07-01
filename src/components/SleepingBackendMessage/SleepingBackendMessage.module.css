@@ -35,7 +35,7 @@
   width: 480px;
   height: 240px;
 
-  animation: moveImage16 15s linear infinite;
+  animation: moveImage16 28s linear infinite;
 }
 
 @keyframes moveImage16 {
@@ -55,7 +55,7 @@
   width: 480px;
   height: 240px;
 
-  animation: moveImage8 15s linear infinite;
+  animation: moveImage8 28s linear infinite;
 }
 
 @keyframes moveImage8 {
@@ -72,9 +72,13 @@
 }
 
 .delay1 {
-  animation-delay: 5s;
+  animation-delay: 7s;
 }
 
 .delay2 {
-  animation-delay: 10s;
+  animation-delay: 14s;
+}
+
+.delay3 {
+  animation-delay: 21s;
 }
