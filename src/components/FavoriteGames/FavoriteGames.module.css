@@ -18,8 +18,7 @@
 .title {
   margin-bottom: 20px;
   color: #ffcc00;
-  font-size: 24px;
-  text-shadow: 1px 1px #000, -1px -1px #000;
+  font-size: 20px;
 }
 
 .list {
@@ -32,18 +31,18 @@
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 10px;
-  border-bottom: 1px solid rgba(37, 187, 59, 0.5);
-  background-color: #131317;
-  color: #f5f1f1;
-  font-weight: 700;
+  border-bottom: 1px solid rgb(37, 187, 59);
+  background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+  color: rgb(234, 222, 222);
+
   font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
-  transition: background-color 0.3s, color 0.3s;
+  box-shadow: 0 0 5px #00ff00;
+  transition: background 0.3s, color 0.3s;
 
   &:hover {
-    background-color: #2d2c3b;
+    background: linear-gradient(135deg, #928dab 0%, #1f1c2c 100%);
     color: #ffcc00;
   }
 }
