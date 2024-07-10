@@ -1,18 +1,25 @@
+import { useState } from 'react';
+
 import { Platforms } from 'components/Platforms/Platforms';
+import { Nintendo } from 'components/Consoles/Nintendo';
+import { Sega } from 'components/Consoles/Sega';
 
-const title = {
-  padding: 100,
-  textAlign: 'center',
-  color: 'aliceblue',
-  fontFamily: '"Press Start 2P", cursive',
-};
+import styles from './HomePage.module.css';
+
 const HomePage = () => {
-  return (
-    <>
-      <h1 style={title}>Welcome Retro Gamer!</h1>
+  const [selectedConsole, setSelectedConsole] = useState(null);
 
-      <Platforms />
-    </>
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.mainTitle}>
+        Welcome Retro Gamer! Choose your console
+      </h1>
+
+      <Platforms onChoose={setSelectedConsole} />
+
+      {selectedConsole === 'Nintendo' && <Nintendo />}
+      {selectedConsole === 'Sega' && <Sega />}
+    </div>
   );
 };
 

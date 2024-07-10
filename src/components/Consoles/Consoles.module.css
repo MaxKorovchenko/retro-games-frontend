@@ -1,0 +1,35 @@
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.text {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listItem {
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #ff0;
+}

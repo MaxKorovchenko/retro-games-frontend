@@ -1,11 +1,10 @@
-/* Обертка для размещения ссылок */
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 100px;
   padding: 50px;
-  background-color: #1a1a1a;
+  /* background-color: #1a1a1a; */
 }
 
 .platform {
@@ -55,6 +54,6 @@
 }
 
 .icon {
-  width: 100px;
+  width: 140px;
   height: 100px;
 }

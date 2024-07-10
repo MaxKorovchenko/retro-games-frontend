@@ -1,28 +1,5 @@
-/* header {
-  background-color: rgb(52, 52, 67);
-}
-
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  max-width: 550px;
-  min-height: 80px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  @media (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media (min-width: 1200px) {
-    max-width: 1230px;
-  }
-} */
 header {
-  background-color: #1b1b32;
+  background-color: #1e1e24;
   border-bottom: 4px solid #ffcc00;
   padding: 10px 0;
 }
@@ -33,7 +10,7 @@ header {
   justify-content: space-between;
 
   max-width: 550px;
-  min-height: 80px;
+  min-height: 70px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;

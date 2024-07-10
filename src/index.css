@@ -9,7 +9,7 @@ body {
   line-height: 1.5;
   margin: 0;
 
-  background: linear-gradient(135deg, #16222a 0%, #3a6073 100%);
+  background-image: url('assets/image/sleeping-back/bg.webp');
 }
 
 body::-webkit-scrollbar {
