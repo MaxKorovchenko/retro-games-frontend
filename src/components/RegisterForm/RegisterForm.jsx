@@ -66,7 +66,7 @@ export const RegisterForm = () => {
           <div className={styles.signWrapper}>
             <p>Already have an account?</p>
             <Link to="/login" className={styles.link}>
-              Log In
+              LogIn
             </Link>
           </div>
         </Form>

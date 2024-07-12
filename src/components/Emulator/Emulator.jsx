@@ -23,7 +23,7 @@ const covers = [
   emuCover7,
 ];
 
-const randomCover = covers[getRandomNumber()];
+const randomCover = covers[getRandomNumber(covers.length)];
 
 const Emulator = ({ romName, isPlatform8Bit }) => {
   const emulatorRef = useRef(null);
@@ -50,7 +50,6 @@ const Emulator = ({ romName, isPlatform8Bit }) => {
       );
       try {
         const url = await getDownloadURL(storageRef);
-        console.log('File available at', url);
         return url;
       } catch (error) {
         console.error('Error getting file URL:', error);
@@ -59,11 +58,8 @@ const Emulator = ({ romName, isPlatform8Bit }) => {
 
     getROMUrl(romName).then(url => {
       window.gameUrl = url;
-      console.log('Game URL:', window.gameUrl);
-
       window.NepPlayer = '#emu';
       window.NepEmu = `${isPlatform8Bit ? 'nes' : 'sega'}`;
-      console.log(window.NepEmu);
       window.NepZoom = 'enable';
       window.NepMaxWidth = '1100px';
       window.NepLang = 'en';

@@ -9,11 +9,13 @@
 .title {
   text-align: center;
   margin-bottom: 30px;
+  color: rgb(219, 14, 14);
 }
 
 .subtitle {
   text-align: center;
   margin-bottom: 30px;
+  color: rgb(83, 239, 11);
 }
 
 .text {

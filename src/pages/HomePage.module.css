@@ -19,6 +19,11 @@
 }
 
 .mainTitle {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  width: 1000px;
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 0.5rem;
 }

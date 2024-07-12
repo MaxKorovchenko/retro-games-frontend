@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
 import { Platforms } from 'components/Platforms/Platforms';
-import { Nintendo } from 'components/Consoles/Nintendo';
-import { Sega } from 'components/Consoles/Sega';
+import { Nintendo } from 'components/ConsolesInfo/Nintendo';
+import { Sega } from 'components/ConsolesInfo/Sega';
 
 import styles from './HomePage.module.css';
 
@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.mainTitle}>
-        Welcome Retro Gamer! Choose your console
+        Welcome, Retro Gamer! Choose your console.
       </h1>
 
       <Platforms onChoose={setSelectedConsole} />

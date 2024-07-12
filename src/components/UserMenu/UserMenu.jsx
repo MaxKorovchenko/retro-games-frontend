@@ -15,7 +15,7 @@ export const UserMenu = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.text}>Hello {user.name}!</p>
+      <p className={styles.text}>{user.name}</p>
       <button className={styles.btn} type="button" onClick={handleLogout}>
         Log Out
       </button>
