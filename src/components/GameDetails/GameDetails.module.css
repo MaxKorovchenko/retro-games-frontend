@@ -20,18 +20,16 @@
   width: 100px;
   background-size: contain;
   background-repeat: repeat;
-  border: 4px solid rgb(0, 0, 0);
-  background-color: #eae6ef;
 }
 
 .sega::before {
   left: -150px;
-  background-image: url('assets/image/bg/segaL2.webp');
+  background-image: url('assets/image/bg/segaL.webp');
 }
 
 .sega::after {
   right: -150px;
-  background-image: url('assets/image/bg/segaR2.webp');
+  background-image: url('assets/image/bg/segaR.webp');
 }
 
 .dendy::before {

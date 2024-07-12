@@ -2,28 +2,9 @@ import { useEffect, useRef } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
-import emuCover1 from 'assets/image/emu/emu1.webp';
-import emuCover2 from 'assets/image/emu/emu2.webp';
-import emuCover3 from 'assets/image/emu/emu3.webp';
-import emuCover4 from 'assets/image/emu/emu4.webp';
-import emuCover5 from 'assets/image/emu/emu5.webp';
-import emuCover6 from 'assets/image/emu/emu6.webp';
-import emuCover7 from 'assets/image/emu/emu7.webp';
-import { getRandomNumber } from 'helpers/getRandomNumber';
+import emuCover from 'assets/image/emu/emuCover.webp';
 
 import styles from './Emulator.module.css';
-
-const covers = [
-  emuCover1,
-  emuCover2,
-  emuCover3,
-  emuCover4,
-  emuCover5,
-  emuCover6,
-  emuCover7,
-];
-
-const randomCover = covers[getRandomNumber(covers.length)];
 
 const Emulator = ({ romName, isPlatform8Bit }) => {
   const emulatorRef = useRef(null);
@@ -63,7 +44,7 @@ const Emulator = ({ romName, isPlatform8Bit }) => {
       window.NepZoom = 'enable';
       window.NepMaxWidth = '1100px';
       window.NepLang = 'en';
-      window.boxartimg = `<img src="${randomCover}" alt="emu cover" style=" width: 100%; height: auto; " />`;
+      window.boxartimg = `<img src="${emuCover}" alt="emu cover" style=" width: 100%; height: auto; " />`;
 
       const script = document.createElement('script');
       script.src = 'https://mem.neptunjs.com/njs/njsLoader.js';

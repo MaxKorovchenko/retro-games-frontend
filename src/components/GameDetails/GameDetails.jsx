@@ -12,14 +12,13 @@ import {
 } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
 import { SlickSlider } from 'components/SlickSlider/SlickSlider';
+import Emulator from 'components/Emulator/Emulator';
 
 import cover8 from 'assets/image/cover8.jpg';
-// import cover16 from 'assets/image/cover16.jpg';
 import icon8 from 'assets/image/icon8.png';
 import icon16 from 'assets/image/icon16.png';
 
 import styles from './GameDetails.module.css';
-import Emulator from 'components/Emulator/Emulator';
 
 export const GameDetails = () => {
   const [showCheats, setShowCheats] = useState(false);
