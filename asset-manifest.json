@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/retro-games-frontend/static/css/main.419ce3f8.css",
-    "main.js": "/retro-games-frontend/static/js/main.b7466451.js",
-    "static/css/417.8469aa65.chunk.css": "/retro-games-frontend/static/css/417.8469aa65.chunk.css",
+    "main.css": "/retro-games-frontend/static/css/main.fb980613.css",
+    "main.js": "/retro-games-frontend/static/js/main.499b706a.js",
+    "static/css/417.55a6c10f.chunk.css": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css",
     "static/js/417.d7304717.chunk.js": "/retro-games-frontend/static/js/417.d7304717.chunk.js",
     "static/css/635.8093d796.chunk.css": "/retro-games-frontend/static/css/635.8093d796.chunk.css",
     "static/js/635.9e00985c.chunk.js": "/retro-games-frontend/static/js/635.9e00985c.chunk.js",
@@ -41,9 +41,9 @@
     "static/media/slick.ttf": "/retro-games-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/retro-games-frontend/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/retro-games-frontend/index.html",
-    "main.419ce3f8.css.map": "/retro-games-frontend/static/css/main.419ce3f8.css.map",
-    "main.b7466451.js.map": "/retro-games-frontend/static/js/main.b7466451.js.map",
-    "417.8469aa65.chunk.css.map": "/retro-games-frontend/static/css/417.8469aa65.chunk.css.map",
+    "main.fb980613.css.map": "/retro-games-frontend/static/css/main.fb980613.css.map",
+    "main.499b706a.js.map": "/retro-games-frontend/static/js/main.499b706a.js.map",
+    "417.55a6c10f.chunk.css.map": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css.map",
     "417.d7304717.chunk.js.map": "/retro-games-frontend/static/js/417.d7304717.chunk.js.map",
     "635.8093d796.chunk.css.map": "/retro-games-frontend/static/css/635.8093d796.chunk.css.map",
     "635.9e00985c.chunk.js.map": "/retro-games-frontend/static/js/635.9e00985c.chunk.js.map",
@@ -62,7 +62,7 @@
     "295.e7774ede.chunk.js.map": "/retro-games-frontend/static/js/295.e7774ede.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.419ce3f8.css",
-    "static/js/main.b7466451.js"
+    "static/css/main.fb980613.css",
+    "static/js/main.499b706a.js"
   ]
 }
