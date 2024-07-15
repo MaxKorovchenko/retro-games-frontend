@@ -5,6 +5,7 @@ import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 import styles from './Layout.module.css';
+import { ScrollToTopButton } from 'components/ScrollToTopButton/ScrollToTopButton';
 
 export const Layout = () => {
   return (
@@ -17,6 +18,7 @@ export const Layout = () => {
         </Suspense>
       </main>
 
+      <ScrollToTopButton />
       <Footer />
 
       <ToastContainer

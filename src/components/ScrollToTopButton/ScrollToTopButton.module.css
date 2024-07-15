@@ -1,0 +1,31 @@
+.toTopBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out,
+    box-shadow 250ms ease-in-out;
+}
+
+.visible {
+  composes: toTopBtn;
+  visibility: visible;
+  opacity: 1;
+}
+
+.visible:hover {
+  box-shadow: 0 0 5px 2px rgb(83, 239, 11);
+}
