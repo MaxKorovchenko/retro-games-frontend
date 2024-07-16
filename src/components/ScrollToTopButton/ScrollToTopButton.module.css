@@ -11,8 +11,9 @@
   width: 60px;
   height: 60px;
   border: 2px solid white;
+  border-radius: 4px;
   background-color: black;
-  color: white;
+  /* color: white; */
 
   visibility: hidden;
   opacity: 0;
@@ -26,6 +27,15 @@
   opacity: 1;
 }
 
-.visible:hover {
-  box-shadow: 0 0 5px 2px rgb(83, 239, 11);
+.icon {
+  fill: white;
+  width: 40px;
+  height: 40px;
+  transition: fill 250ms ease-in-out, transform 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    fill: yellow;
+    transform: scale(1.1);
+  }
 }

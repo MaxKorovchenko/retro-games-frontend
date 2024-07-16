@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import throttle from 'lodash.throttle';
 
+import { ReactComponent as Rocket } from 'assets/image/svg/rocket.svg';
+
 import styles from './ScrollToTopButton.module.css';
 
 export const ScrollToTopButton = () => {
@@ -29,7 +31,7 @@ export const ScrollToTopButton = () => {
       onClick={handleClick}
       aria-label="Scroll to top"
     >
-      UP
+      <Rocket className={styles.icon} />
     </button>
   );
 };
