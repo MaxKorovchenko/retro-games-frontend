@@ -42,8 +42,9 @@
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
 
-  &:hover {
-    transform: scale(1.1);
+  &:hover,
+  &:focus {
+    transform: scale(1.07);
     background-color: #ff6600;
     color: #fff;
   }
