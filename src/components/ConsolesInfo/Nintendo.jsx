@@ -102,7 +102,7 @@ export const Nintendo = () => {
           Many unauthorized clones of the NES were produced, especially in
           regions where the original console was not officially available. These
           clones often featured built-in games and were marketed under various
-          names, like Dendy in Russia.
+          names, like Dendy and Subor in Ukraine.
         </p>
       </section>
       <section>
