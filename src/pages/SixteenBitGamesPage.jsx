@@ -1,10 +1,10 @@
-import { SixteenBitGames } from 'components/SixteenBitGames/SixteenBitGames';
+import { GamesList } from 'components/GamesList/GamesList';
 
 const SixteenBitGamesPage = () => {
   return (
-    <div>
-      <SixteenBitGames />
-    </div>
+    <>
+      <GamesList platform="16-bit" />
+    </>
   );
 };
 

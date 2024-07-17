@@ -1,10 +1,10 @@
-import { EightBitGames } from 'components/EightBitGames/EightBitGames';
+import { GamesList } from 'components/GamesList/GamesList';
 
 const EightBitGamesPage = () => {
   return (
-    <div>
-      <EightBitGames />
-    </div>
+    <>
+      <GamesList platform="8-bit" />
+    </>
   );
 };
 
