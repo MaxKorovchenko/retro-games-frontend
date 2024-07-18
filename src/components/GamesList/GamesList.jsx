@@ -1,19 +1,24 @@
-import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 
 import { selectGames } from 'myRedux/games/selectors';
 
 import styles from './GamesList.module.css';
 
 export const GamesList = ({ platform }) => {
-  const [filter, setFilter] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const gameTitle = searchParams.get('title') ?? '';
+
+  const updateQueryString = title => {
+    const nextParams = title !== '' ? { title } : {};
+    setSearchParams(nextParams);
+  };
 
   const location = useLocation();
   const games = useSelector(selectGames);
   const filteredGames = games.filter(
     game =>
-      game.platform === platform && game.title.toLowerCase().includes(filter)
+      game.platform === platform && game.title.toLowerCase().includes(gameTitle)
   );
 
   return (
@@ -24,8 +29,8 @@ export const GamesList = ({ platform }) => {
           type="text"
           name="filter"
           className={styles.filterInput}
-          value={filter}
-          onChange={e => setFilter(e.target.value.toLowerCase())}
+          value={gameTitle}
+          onChange={e => updateQueryString(e.target.value.toLowerCase())}
         />
       </label>
 
