@@ -5,9 +5,11 @@ import { FaTrashAlt } from 'react-icons/fa';
 
 import { removeFromFavoriteGames } from 'myRedux/auth/operations';
 
-import styles from './FavoriteGameItem.module.css';
+import styles from './FavoriteGamesItem.module.css';
+import { Link, useLocation } from 'react-router-dom';
 
-export const FavoriteGameItem = ({ gameId, title }) => {
+export const FavoriteGamesItem = ({ gameId, title }) => {
+  const location = useLocation();
   const dispatch = useDispatch();
 
   const handleFavoriteGameDelete = () => {
@@ -17,7 +19,11 @@ export const FavoriteGameItem = ({ gameId, title }) => {
   };
 
   return (
-    <div className={styles.wrapper}>
+    <Link
+      className={styles.link}
+      to={`/games/${gameId}`}
+      state={{ from: location }}
+    >
       <p>{title}</p>
       <button
         className={styles.deleteButton}
@@ -26,6 +32,6 @@ export const FavoriteGameItem = ({ gameId, title }) => {
       >
         <FaTrashAlt />
       </button>
-    </div>
+    </Link>
   );
 };

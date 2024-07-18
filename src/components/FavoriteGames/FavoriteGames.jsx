@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 
 import { selectUser } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
-import { FavoriteGameItem } from 'components/FavoriteGameItem/FavoriteGameItem';
+import { FavoriteGamesItem } from 'components/FavoriteGamesItem/FavoriteGamesItem';
 
 import styles from './FavoriteGames.module.css';
 
@@ -26,7 +26,7 @@ export const FavoriteGames = () => {
           <ul>
             {userFavorites8Bit.map(({ _id, title }) => (
               <li className={styles.item} key={_id}>
-                <FavoriteGameItem gameId={_id} title={title} />
+                <FavoriteGamesItem gameId={_id} title={title} />
               </li>
             ))}
           </ul>
@@ -41,7 +41,7 @@ export const FavoriteGames = () => {
           <ul>
             {userFavorites16Bit.map(({ _id, title }) => (
               <li className={styles.item} key={_id}>
-                <FavoriteGameItem gameId={_id} title={title} />
+                <FavoriteGamesItem gameId={_id} title={title} />
               </li>
             ))}
           </ul>
