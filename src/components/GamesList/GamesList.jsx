@@ -2,6 +2,7 @@ import { useSelector } from 'react-redux';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
 
 import { selectGames } from 'myRedux/games/selectors';
+import { ReactComponent as SearchIcon } from 'assets/image/svg/search-icon.svg';
 
 import styles from './GamesList.module.css';
 
@@ -30,8 +31,10 @@ export const GamesList = ({ platform }) => {
           name="filter"
           className={styles.filterInput}
           value={gameTitle}
+          placeholder={`Total games: ${filteredGames.length}`}
           onChange={e => updateQueryString(e.target.value.toLowerCase())}
         />
+        <SearchIcon className={styles.icon} />
       </label>
 
       <ul className={styles.list}>
