@@ -31,8 +31,12 @@
 }
 
 .item {
-  margin-bottom: 10px;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+  /* padding: 10px; */
   border-bottom: 1px solid rgb(37, 187, 59);
   background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
   color: rgb(234, 222, 222);

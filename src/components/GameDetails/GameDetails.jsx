@@ -64,7 +64,7 @@ export const GameDetails = () => {
   return (
     <div className={`${styles.container} ${platformClass}`}>
       <Link to={backLinkRef.current} className={styles.backLink}>
-        &lArr; Back to games
+        &lArr; Back link
       </Link>
 
       <div className={styles.wrapper}>
