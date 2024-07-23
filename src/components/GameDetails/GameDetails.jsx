@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ReactComponent as Arrow } from 'assets/image/svg/arrow.svg';
 
 import { addToFavoriteGames } from 'myRedux/auth/operations';
 import {
@@ -64,7 +65,7 @@ export const GameDetails = () => {
   return (
     <div className={`${styles.container} ${platformClass}`}>
       <Link to={backLinkRef.current} className={styles.backLink}>
-        &lArr; Back link
+        <Arrow className={styles.arrow} /> Go Back
       </Link>
 
       <div className={styles.wrapper}>

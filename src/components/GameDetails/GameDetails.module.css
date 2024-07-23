@@ -60,8 +60,8 @@
 
 .platformIcon {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
 }
 
 .backLink {
@@ -70,12 +70,27 @@
   left: 15px;
   padding: 5px;
 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
   color: #00ff00;
+  fill: #00ff00;
   font-size: 16px;
 
-  &:hover {
+  transition: color 250ms ease-in-out, fill 250ms ease-in-out;
+
+  &:hover,
+  &:focus {
     color: #ff0000;
+    fill: #ff0000;
   }
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  fill: inherit;
 }
 
 .gameTitle {
