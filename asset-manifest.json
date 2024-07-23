@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/retro-games-frontend/static/css/main.0eff5ac2.css",
-    "main.js": "/retro-games-frontend/static/js/main.e145d157.js",
+    "main.js": "/retro-games-frontend/static/js/main.58fb0d82.js",
     "static/css/417.55a6c10f.chunk.css": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css",
     "static/js/417.0adb382a.chunk.js": "/retro-games-frontend/static/js/417.0adb382a.chunk.js",
     "static/css/167.192267ac.chunk.css": "/retro-games-frontend/static/css/167.192267ac.chunk.css",
     "static/js/167.9abf59f1.chunk.js": "/retro-games-frontend/static/js/167.9abf59f1.chunk.js",
     "static/css/266.192267ac.chunk.css": "/retro-games-frontend/static/css/266.192267ac.chunk.css",
     "static/js/266.1a8305fc.chunk.js": "/retro-games-frontend/static/js/266.1a8305fc.chunk.js",
-    "static/css/127.ba793cd6.chunk.css": "/retro-games-frontend/static/css/127.ba793cd6.chunk.css",
-    "static/js/127.3e42008c.chunk.js": "/retro-games-frontend/static/js/127.3e42008c.chunk.js",
+    "static/css/130.c2c5357c.chunk.css": "/retro-games-frontend/static/css/130.c2c5357c.chunk.css",
+    "static/js/130.efc9ad8f.chunk.js": "/retro-games-frontend/static/js/130.efc9ad8f.chunk.js",
     "static/css/636.ee374764.chunk.css": "/retro-games-frontend/static/css/636.ee374764.chunk.css",
     "static/js/636.b2e906ff.chunk.js": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js",
     "static/css/443.8495a157.chunk.css": "/retro-games-frontend/static/css/443.8495a157.chunk.css",
@@ -36,6 +36,7 @@
     "static/media/segaR.webp": "/retro-games-frontend/static/media/segaR.3335ec4e3afbc04c434d.webp",
     "static/media/nintendoL.webp": "/retro-games-frontend/static/media/nintendoL.3c3c77170c02c6446b4d.webp",
     "static/media/nintendoR.webp": "/retro-games-frontend/static/media/nintendoR.a4f6e8cd08e1f304700e.webp",
+    "static/media/arrow.svg": "/retro-games-frontend/static/media/arrow.6d227a6356c6d5b676ab755d74cc3ef5.svg",
     "static/media/slick.svg": "/retro-games-frontend/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/retro-games-frontend/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/retro-games-frontend/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -44,15 +45,15 @@
     "static/media/search-icon.svg": "/retro-games-frontend/static/media/search-icon.6bda399131a91c4e733121b551a907d8.svg",
     "index.html": "/retro-games-frontend/index.html",
     "main.0eff5ac2.css.map": "/retro-games-frontend/static/css/main.0eff5ac2.css.map",
-    "main.e145d157.js.map": "/retro-games-frontend/static/js/main.e145d157.js.map",
+    "main.58fb0d82.js.map": "/retro-games-frontend/static/js/main.58fb0d82.js.map",
     "417.55a6c10f.chunk.css.map": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css.map",
     "417.0adb382a.chunk.js.map": "/retro-games-frontend/static/js/417.0adb382a.chunk.js.map",
     "167.192267ac.chunk.css.map": "/retro-games-frontend/static/css/167.192267ac.chunk.css.map",
     "167.9abf59f1.chunk.js.map": "/retro-games-frontend/static/js/167.9abf59f1.chunk.js.map",
     "266.192267ac.chunk.css.map": "/retro-games-frontend/static/css/266.192267ac.chunk.css.map",
     "266.1a8305fc.chunk.js.map": "/retro-games-frontend/static/js/266.1a8305fc.chunk.js.map",
-    "127.ba793cd6.chunk.css.map": "/retro-games-frontend/static/css/127.ba793cd6.chunk.css.map",
-    "127.3e42008c.chunk.js.map": "/retro-games-frontend/static/js/127.3e42008c.chunk.js.map",
+    "130.c2c5357c.chunk.css.map": "/retro-games-frontend/static/css/130.c2c5357c.chunk.css.map",
+    "130.efc9ad8f.chunk.js.map": "/retro-games-frontend/static/js/130.efc9ad8f.chunk.js.map",
     "636.ee374764.chunk.css.map": "/retro-games-frontend/static/css/636.ee374764.chunk.css.map",
     "636.b2e906ff.chunk.js.map": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js.map",
     "443.8495a157.chunk.css.map": "/retro-games-frontend/static/css/443.8495a157.chunk.css.map",
@@ -65,6 +66,6 @@
   },
   "entrypoints": [
     "static/css/main.0eff5ac2.css",
-    "static/js/main.e145d157.js"
+    "static/js/main.58fb0d82.js"
   ]
 }
