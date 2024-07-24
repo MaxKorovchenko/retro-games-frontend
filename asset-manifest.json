@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/retro-games-frontend/static/css/main.0eff5ac2.css",
-    "main.js": "/retro-games-frontend/static/js/main.58fb0d82.js",
+    "main.js": "/retro-games-frontend/static/js/main.ba6966d3.js",
     "static/css/417.55a6c10f.chunk.css": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css",
     "static/js/417.0adb382a.chunk.js": "/retro-games-frontend/static/js/417.0adb382a.chunk.js",
     "static/css/167.192267ac.chunk.css": "/retro-games-frontend/static/css/167.192267ac.chunk.css",
@@ -9,7 +9,7 @@
     "static/css/266.192267ac.chunk.css": "/retro-games-frontend/static/css/266.192267ac.chunk.css",
     "static/js/266.1a8305fc.chunk.js": "/retro-games-frontend/static/js/266.1a8305fc.chunk.js",
     "static/css/130.c2c5357c.chunk.css": "/retro-games-frontend/static/css/130.c2c5357c.chunk.css",
-    "static/js/130.efc9ad8f.chunk.js": "/retro-games-frontend/static/js/130.efc9ad8f.chunk.js",
+    "static/js/130.8617c8b6.chunk.js": "/retro-games-frontend/static/js/130.8617c8b6.chunk.js",
     "static/css/636.ee374764.chunk.css": "/retro-games-frontend/static/css/636.ee374764.chunk.css",
     "static/js/636.b2e906ff.chunk.js": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js",
     "static/css/443.8495a157.chunk.css": "/retro-games-frontend/static/css/443.8495a157.chunk.css",
@@ -45,7 +45,7 @@
     "static/media/search-icon.svg": "/retro-games-frontend/static/media/search-icon.6bda399131a91c4e733121b551a907d8.svg",
     "index.html": "/retro-games-frontend/index.html",
     "main.0eff5ac2.css.map": "/retro-games-frontend/static/css/main.0eff5ac2.css.map",
-    "main.58fb0d82.js.map": "/retro-games-frontend/static/js/main.58fb0d82.js.map",
+    "main.ba6966d3.js.map": "/retro-games-frontend/static/js/main.ba6966d3.js.map",
     "417.55a6c10f.chunk.css.map": "/retro-games-frontend/static/css/417.55a6c10f.chunk.css.map",
     "417.0adb382a.chunk.js.map": "/retro-games-frontend/static/js/417.0adb382a.chunk.js.map",
     "167.192267ac.chunk.css.map": "/retro-games-frontend/static/css/167.192267ac.chunk.css.map",
@@ -53,7 +53,7 @@
     "266.192267ac.chunk.css.map": "/retro-games-frontend/static/css/266.192267ac.chunk.css.map",
     "266.1a8305fc.chunk.js.map": "/retro-games-frontend/static/js/266.1a8305fc.chunk.js.map",
     "130.c2c5357c.chunk.css.map": "/retro-games-frontend/static/css/130.c2c5357c.chunk.css.map",
-    "130.efc9ad8f.chunk.js.map": "/retro-games-frontend/static/js/130.efc9ad8f.chunk.js.map",
+    "130.8617c8b6.chunk.js.map": "/retro-games-frontend/static/js/130.8617c8b6.chunk.js.map",
     "636.ee374764.chunk.css.map": "/retro-games-frontend/static/css/636.ee374764.chunk.css.map",
     "636.b2e906ff.chunk.js.map": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js.map",
     "443.8495a157.chunk.css.map": "/retro-games-frontend/static/css/443.8495a157.chunk.css.map",
@@ -66,6 +66,6 @@
   },
   "entrypoints": [
     "static/css/main.0eff5ac2.css",
-    "static/js/main.58fb0d82.js"
+    "static/js/main.ba6966d3.js"
   ]
 }
