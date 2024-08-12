@@ -1,7 +1,11 @@
 header {
   background-color: #1e1e24;
-  border-bottom: 4px solid #ffcc00;
-  padding: 10px 0;
+  border-bottom: 2px solid #ffcc00;
+
+  @media (min-width: 768px) {
+    border-bottom: 4px solid #ffcc00;
+    padding: 10px 0;
+  }
 }
 
 .container {
@@ -12,11 +16,13 @@ header {
   max-width: 550px;
   min-height: 70px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   @media (min-width: 768px) {
     max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   @media (min-width: 1200px) {

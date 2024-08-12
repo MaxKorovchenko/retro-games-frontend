@@ -19,7 +19,8 @@ export const GamesList = ({ platform }) => {
   const games = useSelector(selectGames);
   const filteredGames = games.filter(
     game =>
-      game.platform === platform && game.title.toLowerCase().includes(gameTitle)
+      game.platform === platform &&
+      game.title.toLowerCase().includes(gameTitle.trim())
   );
 
   return (
