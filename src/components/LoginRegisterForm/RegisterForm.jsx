@@ -5,7 +5,7 @@ import { ErrorMessage, Field, Formik, Form } from 'formik';
 import { RegisterSchema } from 'helpers/validationSchemas/registerSchema';
 import { register } from 'myRedux/auth/operations';
 
-import styles from './RegisterForm.module.css';
+import styles from './Form.module.css';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -64,7 +64,7 @@ export const RegisterForm = () => {
           </button>
 
           <div className={styles.signWrapper}>
-            <p>Already have an account?</p>
+            <p className={styles.text}>Already have an account?</p>
             <Link to="/login" className={styles.link}>
               LogIn
             </Link>

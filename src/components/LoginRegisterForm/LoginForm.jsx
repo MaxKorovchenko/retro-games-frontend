@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { login } from 'myRedux/auth/operations';
 import { LoginSchema } from 'helpers/validationSchemas/loginSchema';
 
-import styles from './LoginForm.module.css';
+import styles from './Form.module.css';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -64,7 +64,7 @@ export const LoginForm = () => {
           </button>
 
           <div className={styles.signWrapper}>
-            <p>Don't have an account?</p>
+            <p className={styles.text}>Don't have an account?</p>
             <Link to="/register" className={styles.link}>
               Register
             </Link>
