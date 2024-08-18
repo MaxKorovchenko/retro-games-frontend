@@ -18,9 +18,10 @@
 .filterLabel {
   position: relative;
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 10px;
 
   padding: 10px;
   margin-bottom: 30px;
@@ -29,6 +30,12 @@
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
   color: #00ff00;
   font-size: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 50px;
+  }
 }
 
 .filterInput {
@@ -46,7 +53,7 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.8);
-    text-align: center;
+    text-align: left;
     font-size: 14px;
   }
 
@@ -62,34 +69,46 @@
 
 .icon {
   position: absolute;
-  top: 10px;
-  right: 240px;
+  top: 50px;
+  right: 15px;
   width: 50px;
   height: 50px;
   color: white;
   fill: white;
+
+  @media (min-width: 768px) {
+    top: 10px;
+    right: 240px;
+  }
 }
 
 .link {
-  color: #ffffff;
-  font-family: 'Press Start 2P', cursive;
-  text-decoration: none;
   display: inline-block;
   padding: 8px 16px;
   margin: 5px 0;
+
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  text-decoration: none;
+
   background-color: #000000;
   border: 2px solid #ffffff;
   border-radius: 4px;
   box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
   transition: all 0.3s ease-in-out;
-}
 
-.link:hover,
-.link:focus {
-  color: #000000;
-  background-color: #00ff00;
-  border-color: #00ff00;
-  box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: #00ff00;
+    border-color: #00ff00;
+    box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .list {
