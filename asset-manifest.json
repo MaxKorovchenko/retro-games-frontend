@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/retro-games-frontend/static/css/main.1ca7b525.css",
-    "main.js": "/retro-games-frontend/static/js/main.9068a98e.js",
+    "main.js": "/retro-games-frontend/static/js/main.442d0bee.js",
     "static/css/417.178767d0.chunk.css": "/retro-games-frontend/static/css/417.178767d0.chunk.css",
     "static/js/417.bf32812e.chunk.js": "/retro-games-frontend/static/js/417.bf32812e.chunk.js",
     "static/css/167.151c9389.chunk.css": "/retro-games-frontend/static/css/167.151c9389.chunk.css",
     "static/js/167.2a81ac42.chunk.js": "/retro-games-frontend/static/js/167.2a81ac42.chunk.js",
     "static/css/266.151c9389.chunk.css": "/retro-games-frontend/static/css/266.151c9389.chunk.css",
     "static/js/266.68819513.chunk.js": "/retro-games-frontend/static/js/266.68819513.chunk.js",
-    "static/css/130.607260bc.chunk.css": "/retro-games-frontend/static/css/130.607260bc.chunk.css",
-    "static/js/130.d3fd3606.chunk.js": "/retro-games-frontend/static/js/130.d3fd3606.chunk.js",
+    "static/css/178.654baa69.chunk.css": "/retro-games-frontend/static/css/178.654baa69.chunk.css",
+    "static/js/178.3775b1b5.chunk.js": "/retro-games-frontend/static/js/178.3775b1b5.chunk.js",
     "static/css/636.beb6e6bc.chunk.css": "/retro-games-frontend/static/css/636.beb6e6bc.chunk.css",
     "static/js/636.b2e906ff.chunk.js": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js",
     "static/css/28.649ad221.chunk.css": "/retro-games-frontend/static/css/28.649ad221.chunk.css",
@@ -25,7 +25,6 @@
     "static/media/rr.webp": "/retro-games-frontend/static/media/rr.7b3e14c32cedbe922c26.webp",
     "static/media/bg.webp": "/retro-games-frontend/static/media/bg.d632570593f6ae29a94e.webp",
     "static/media/cover8.jpg": "/retro-games-frontend/static/media/cover8.644cdd2527a5f0e1226a.jpg",
-    "static/media/emuCover.webp": "/retro-games-frontend/static/media/emuCover.086e26b356fbb9df761d.webp",
     "static/media/chip-dale.webp": "/retro-games-frontend/static/media/chip-dale.e85f8e1f4958e13cb504.webp",
     "static/media/cool.webp": "/retro-games-frontend/static/media/cool.7ac9e6fd91383d692c09.webp",
     "static/media/darkwing-duck.webp": "/retro-games-frontend/static/media/darkwing-duck.74c790c53b225aaadb51.webp",
@@ -45,15 +44,15 @@
     "static/media/search-icon.svg": "/retro-games-frontend/static/media/search-icon.6bda399131a91c4e733121b551a907d8.svg",
     "index.html": "/retro-games-frontend/index.html",
     "main.1ca7b525.css.map": "/retro-games-frontend/static/css/main.1ca7b525.css.map",
-    "main.9068a98e.js.map": "/retro-games-frontend/static/js/main.9068a98e.js.map",
+    "main.442d0bee.js.map": "/retro-games-frontend/static/js/main.442d0bee.js.map",
     "417.178767d0.chunk.css.map": "/retro-games-frontend/static/css/417.178767d0.chunk.css.map",
     "417.bf32812e.chunk.js.map": "/retro-games-frontend/static/js/417.bf32812e.chunk.js.map",
     "167.151c9389.chunk.css.map": "/retro-games-frontend/static/css/167.151c9389.chunk.css.map",
     "167.2a81ac42.chunk.js.map": "/retro-games-frontend/static/js/167.2a81ac42.chunk.js.map",
     "266.151c9389.chunk.css.map": "/retro-games-frontend/static/css/266.151c9389.chunk.css.map",
     "266.68819513.chunk.js.map": "/retro-games-frontend/static/js/266.68819513.chunk.js.map",
-    "130.607260bc.chunk.css.map": "/retro-games-frontend/static/css/130.607260bc.chunk.css.map",
-    "130.d3fd3606.chunk.js.map": "/retro-games-frontend/static/js/130.d3fd3606.chunk.js.map",
+    "178.654baa69.chunk.css.map": "/retro-games-frontend/static/css/178.654baa69.chunk.css.map",
+    "178.3775b1b5.chunk.js.map": "/retro-games-frontend/static/js/178.3775b1b5.chunk.js.map",
     "636.beb6e6bc.chunk.css.map": "/retro-games-frontend/static/css/636.beb6e6bc.chunk.css.map",
     "636.b2e906ff.chunk.js.map": "/retro-games-frontend/static/js/636.b2e906ff.chunk.js.map",
     "28.649ad221.chunk.css.map": "/retro-games-frontend/static/css/28.649ad221.chunk.css.map",
@@ -66,6 +65,6 @@
   },
   "entrypoints": [
     "static/css/main.1ca7b525.css",
-    "static/js/main.9068a98e.js"
+    "static/js/main.442d0bee.js"
   ]
 }
