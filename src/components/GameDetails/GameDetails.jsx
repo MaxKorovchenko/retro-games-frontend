@@ -13,7 +13,7 @@ import {
 } from 'myRedux/auth/selectors';
 import { selectGames } from 'myRedux/games/selectors';
 import { SlickSlider } from 'components/SlickSlider/SlickSlider';
-import Emulator from 'components/Emulator/Emulator';
+// import Emulator from 'components/Emulator/Emulator';
 
 import cover8 from 'assets/image/cover8.jpg';
 import icon8 from 'assets/image/icon8.png';
@@ -49,7 +49,7 @@ export const GameDetails = () => {
     numberOfPlayers = 1,
     releaseYear = 'Undefined',
     gallery = [],
-    romName = 'Aladdin.bin',
+    // romName = 'Aladdin.bin',
     cheats = 'No cheats available',
   } = games.length && games.find(game => game._id === gameId);
 
@@ -118,7 +118,7 @@ export const GameDetails = () => {
 
       <SlickSlider items={gallery} title={title} />
 
-      <Emulator romName={romName} isPlatform8Bit={isPlatform8Bit} />
+      {/* <Emulator romName={romName} isPlatform8Bit={isPlatform8Bit} /> */}
 
       <button className={styles.cheatsBtn} onClick={toggleCheatsBtn}>
         {showCheats ? 'Hide' : 'Show'} codes and cheats
