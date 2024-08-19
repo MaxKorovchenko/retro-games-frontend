@@ -7,4 +7,9 @@ footer {
 
   background-color: black;
   color: aliceblue;
+  border-top: 4px solid rgb(63, 63, 54);
+
+  @media (max-width: 374px) {
+    min-width: 375px;
+  }
 }

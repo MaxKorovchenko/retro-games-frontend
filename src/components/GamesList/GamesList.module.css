@@ -6,6 +6,10 @@
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 
+  @media (max-width: 374px) {
+    min-width: 375px;
+  }
+
   @media (min-width: 768px) {
     max-width: 768px;
   }
@@ -40,7 +44,6 @@
 
 .filterInput {
   width: 100%;
-  max-width: 400px;
   padding: 15px 40px;
   border: 2px solid #00ff00;
   border-radius: 4px;
@@ -64,6 +67,10 @@
 
   &:focus-visible::placeholder {
     visibility: hidden;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 400px;
   }
 }
 

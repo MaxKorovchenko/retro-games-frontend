@@ -6,6 +6,10 @@
   font-family: 'Press Start 2P', cursive;
   color: #fff;
 
+  @media (max-width: 374px) {
+    min-width: 375px;
+  }
+
   @media (min-width: 768px) {
     max-width: 768px;
   }

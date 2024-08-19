@@ -18,6 +18,10 @@
   box-shadow: 0 0 30px #00ff00 inset;
 
   background-image: url('assets/image/sleeping-back/bg.webp');
+
+  @media (max-width: 374px) {
+    min-width: 375px;
+  }
 }
 
 .message {

@@ -85,9 +85,17 @@ export const GameDetails = () => {
 
         <div className={styles.gameInfo}>
           <h2 className={styles.gameTitle}>{title}</h2>
-          <p className={styles.text}>Genre: {genre}</p>
-          <p className={styles.text}>Number of Players: {numberOfPlayers}</p>
-          <p className={styles.text}>Release Year: {releaseYear}</p>
+          <p className={styles.text}>
+            <span className={styles.highlight}>Genre:</span> {genre}
+          </p>
+          <p className={styles.text}>
+            <span className={styles.highlight}>Number of Players:</span>{' '}
+            {numberOfPlayers}
+          </p>
+          <p className={styles.text}>
+            <span className={styles.highlight}>Release Year: </span>
+            {releaseYear}
+          </p>
         </div>
       </div>
 

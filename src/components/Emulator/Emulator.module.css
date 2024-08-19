@@ -1,4 +1,6 @@
 .emu {
+  display: none;
+
   margin-top: 70px;
   margin-bottom: 50px;
   padding: 10px;
@@ -8,4 +10,8 @@
   height: 660px !important;
 
   overflow: hidden;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
