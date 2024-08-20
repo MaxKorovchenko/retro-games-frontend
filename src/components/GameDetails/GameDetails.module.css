@@ -61,17 +61,15 @@
   background-image: url('assets/image/bg/nintendoR.webp');
 }
 
-.wrapper {
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .wrapper {
     display: flex;
     gap: 30px;
 
     margin-bottom: 20px;
   }
-}
 
-.gameInfo {
-  @media (min-width: 768px) {
+  .gameInfo {
     width: 570px;
   }
 }
