@@ -91,6 +91,10 @@
   width: 80px;
 
   @media (min-width: 768px) {
+    width: 100px;
+  }
+
+  @media (min-width: 1200px) {
     width: 120px;
   }
 }
@@ -140,15 +144,25 @@
   margin-bottom: 30px;
 
   @media (min-width: 768px) {
+    font-size: 20px;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 24px;
   }
 }
 
 .text {
   font-size: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: 1200px) {
     font-size: 18px;
   }
 }

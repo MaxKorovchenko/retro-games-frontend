@@ -3,6 +3,10 @@
   gap: 8px;
 
   @media (min-width: 768px) {
+    gap: 25px;
+  }
+
+  @media (min-width: 1200px) {
     gap: 40px;
   }
 }
@@ -17,13 +21,6 @@
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
     color 0.3s ease-in-out;
 
-  /* &:hover,
-  &:focus {
-    transform: scale(1.07);
-    background-color: #6f3813;
-    color: #fff;
-  } */
-
   &:global(.active) {
     color: #ff6600;
   }
@@ -37,7 +34,7 @@
     border: 2px solid #ffcc00;
     border-radius: 5px;
     background-color: #1b1b32;
-    font-size: 18px;
+    font-size: 14px;
 
     &:hover,
     &:focus {
@@ -50,5 +47,9 @@
       background-color: #ff6600;
       color: #fff;
     }
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
   }
 }

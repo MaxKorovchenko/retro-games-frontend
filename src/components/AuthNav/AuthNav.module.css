@@ -3,6 +3,10 @@
   gap: 8px;
 
   @media (min-width: 768px) {
+    gap: 25px;
+  }
+
+  @media (min-width: 1200px) {
     gap: 40px;
   }
 }
@@ -30,7 +34,7 @@
     border: 2px solid #ffcc00;
     border-radius: 5px;
     background-color: #1b1b32;
-    font-size: 18px;
+    font-size: 14px;
 
     &:hover,
     &:focus {
@@ -43,5 +47,9 @@
       background-color: #ff6600;
       color: #fff;
     }
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 18px;
   }
 }

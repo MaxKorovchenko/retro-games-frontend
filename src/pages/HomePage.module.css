@@ -31,11 +31,12 @@
 
   @media (min-width: 768px) {
     margin: 0 auto 50px;
-    width: 1000px;
-    font-size: 36px;
-    letter-spacing: 0.5rem;
+    font-size: 28px;
   }
 
   @media (min-width: 1200px) {
+    width: 1000px;
+    font-size: 36px;
+    letter-spacing: 0.5rem;
   }
 }
