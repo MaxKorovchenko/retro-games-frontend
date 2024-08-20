@@ -122,6 +122,7 @@
   }
 }
 
+.errorName,
 .errorEmail,
 .errorPassword {
   color: #ff4444;
