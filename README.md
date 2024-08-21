@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Retro Games Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the frontend of the Retro Games application! This project is a
+full-stack application designed to bring back the nostalgia of 90s retro games.
+The frontend is built using React with Create React App, and it connects to a
+backend built with Express, MongoDB, and various file storage services.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+Retro Games allows users to relive the classic gaming experience by providing
+access to retro games from Nintendo and Sega consoles. The app includes detailed
+information about each game, screenshots, cheats, and even the ability to play
+games directly in the browser using an integrated emulator.
 
-### `npm start`
+#### Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="./src/assets/image/readme/home-page.webp" alt="Home Page" width="500">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Games
 
-### `npm test`
+<img src="./src/assets/image/readme/8-bit.webp" alt="Contacts Page" width="500">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="./src/assets/image/readme/16-bit.webp" alt="Contacts Page" width="500">
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User Registration & Authentication**: Users can sign up, log in, and manage
+  their favorite games.
+- **Console Information**: Detailed descriptions of 8-bit Nintendo and 16-bit
+  Sega consoles.
+- **Game Details**: Each game has a dedicated page with a gallery of
+  screenshots, cheats, and tips.
+- **Built-in Emulator**: Play retro games directly in your browser using
+  NeptunJS.
+- **Favorites Management**: Registered users can add or remove games from their
+  favorites list.
+- **Game Search & Filter**: Quickly find your favorite games using a responsive
+  search filter.
+- **Responsive Design**: Optimized for mobile devices, tablets, and desktops.
+- **State Management**: Global and server state managed with Redux.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Data Persistence**: JWT tokens are persisted for a seamless user experience.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Route Management**: Public and private routes are configured to control page
+  access.
+- **Performance Optimization**: Code splitting and lazy loading enhance the
+  app's performance.
+- **User Notifications**: Users receive notifications for various actions,
+  improving their experience.
 
-### `npm run eject`
+## Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Home Page**: Detailed information about 8-bit Nintendo and 16-bit Sega
+  consoles.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **EightBitGamesPage**: A list of 8-bit games.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **SixteenBitGamesPage**: A list of 16-bit games.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **ProfilePage**: Manage your favorite games.
 
-## Learn More
+- **RegisterPage**: User registration.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **LoginPage**: User login.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **GameDetailsPage**: Detailed game information, including emulator and
+  gallery.
 
-### Code Splitting
+- **NotFoundPage**: A custom 404 page for non-existent routes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Technologies Used
 
-### Analyzing the Bundle Size
+- React: UI development.
+- React Router: Routing.
+- Redux: State management.
+- Redux Persist: Data persistence.
+- Lodash: Utility functions.
+- NeptunJS: Game emulation.
+- Firebase Storage: Game storage.
+- Dropbox: Image storage.
+- CSS Modules: Component-specific styling.
+- Create React App: Project setup and configuration.
+- Express: Backend framework.
+- MongoDB: Database.
+- Axios: HTTP client.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Acknowledgments
 
-### Making a Progressive Web App
+- **NeptunJS Developers**: For providing the emulator that powers our in-browser
+  gameplay.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **OpenAI's ChatGPT**: For assisting in the development of this project by
+  providing valuable guidance and code suggestions.
