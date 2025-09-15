@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import { Link, Navigate, useLocation, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ReactComponent as Arrow } from 'assets/image/svg/arrow.svg';
@@ -40,6 +40,12 @@ export const GameDetails = () => {
 
   const backLinkRef = useRef(location.state?.from ?? '/');
 
+  const selectedGame = games.find(game => game._id === gameId);
+
+  if (!selectedGame) {
+    return <Navigate to="/" />;
+  }
+
   const {
     title = '',
     platform = '',
@@ -51,15 +57,15 @@ export const GameDetails = () => {
     gallery = [],
     romName = 'Aladdin.bin',
     cheats = 'No cheats available',
-  } = games.length && games.find(game => game._id === gameId);
+  } = selectedGame;
 
   const shouldDisableBtn =
     !isLoggedIn || isLoading || favoriteGames.includes(gameId);
 
   const handleAddToFavoriteGames = () =>
-    dispatch(addToFavoriteGames(gameId)).then(() =>
-      toast.success(`${title} was successfully added to your favorites`)
-    );
+    dispatch(addToFavoriteGames(gameId)).then(() => {
+      toast.success(`${title} was successfully added to your favorites`);
+    });
 
   const isPlatform8Bit = platform === '8-bit';
   const platformClass = isPlatform8Bit ? styles.dendy : styles.sega;

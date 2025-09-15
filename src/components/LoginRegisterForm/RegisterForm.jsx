@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { ErrorMessage, Field, Formik, Form } from 'formik';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { RegisterSchema } from 'helpers/validationSchemas/registerSchema';
 import { register } from 'myRedux/auth/operations';
@@ -10,10 +12,17 @@ import styles from './Form.module.css';
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = (values, action) => {
-    dispatch(register(values));
-
-    action.resetForm();
+  const handleSubmit = values => {
+    dispatch(register(values))
+      .then(res => {
+        if (res.meta.requestStatus === 'rejected') {
+          throw new Error('Email already in use');
+        }
+        toast.info(`Welcome ${res.payload.user.name}`);
+      })
+      .catch(e => {
+        toast.error(e.message);
+      });
   };
 
   return (

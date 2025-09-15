@@ -12,7 +12,7 @@ import styles from './Form.module.css';
 export const LoginForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = (values, action) => {
+  const handleSubmit = (values, actions) => {
     dispatch(login(values))
       .then(res => {
         if (res.meta.requestStatus === 'rejected') {
@@ -21,10 +21,9 @@ export const LoginForm = () => {
         toast.info(`Welcome ${res.payload.user.name}`);
       })
       .catch(e => {
+        actions.setFieldValue('password', '');
         toast.error(e.message);
       });
-
-    action.resetForm();
   };
 
   return (
