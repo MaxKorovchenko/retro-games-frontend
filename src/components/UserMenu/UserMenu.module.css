@@ -3,18 +3,32 @@
   align-items: center;
 
   @media (min-width: 768px) {
+    gap: 20px;
+  }
+
+  @media (min-width: 1200px) {
     gap: 30px;
   }
 }
 
-.text {
+.userIcon {
   display: none;
-  text-align: center;
-  color: #ffcc00;
-  font-family: 'Press Start 2P', cursive;
+
+  outline: 4px solid #b0a80f;
+  border-radius: 20%;
+  text-transform: capitalize;
+  color: #1378dc;
+  background-color: #100f0f;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 
   @media (min-width: 1200px) {
-    font-size: 18px;
+    padding: 8px 16px;
+    font-size: 20px;
   }
 }
 

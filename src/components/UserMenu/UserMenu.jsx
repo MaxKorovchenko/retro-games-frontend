@@ -15,7 +15,7 @@ export const UserMenu = () => {
 
   return (
     <div className={styles.container}>
-      <p className={styles.text}>{user.name}</p>
+      <div className={styles.userIcon}>{user.name[0]}</div>
       <button className={styles.btn} type="button" onClick={handleLogout}>
         Log Out
       </button>
