@@ -1,5 +1,5 @@
 header {
-  background-color: #1e1e24;
+  /* background-color: #1e1e24; */
   border-bottom: 2px solid #ffcc00;
 
   @media (min-width: 768px) {

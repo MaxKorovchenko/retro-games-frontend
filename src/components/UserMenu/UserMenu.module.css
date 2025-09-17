@@ -14,11 +14,12 @@
 .userIcon {
   display: none;
 
-  outline: 4px solid #b0a80f;
   border-radius: 20%;
   text-transform: capitalize;
-  color: #1378dc;
-  background-color: #100f0f;
+  color: #2f8eed;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  font-weight: 900;
 
   @media (min-width: 768px) {
     display: block;
