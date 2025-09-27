@@ -36,10 +36,14 @@ export const SleepingBackendMessage = () => {
     <div className={styles.outerContainer}>
       <div className={styles.container}>
         <audio ref={audioRef} src={soundTrack} loop />
-        <button onClick={toggleMute} className={styles.audioToggle}>
+        <button
+          onClick={toggleMute}
+          className={styles.audioToggle}
+          aria-label={isMuted ? 'Unmute sound' : 'Mute sound'}
+        >
           <img
             src={isMuted ? speakerOff : speakerOn}
-            alt={isMuted ? 'Unmute Sound' : 'Mute Sound'}
+            alt=""
             className={styles.audioIcon}
           />
         </button>

@@ -32,6 +32,7 @@ export const FavoriteGamesItem = ({ gameId, title }) => {
         className={styles.deleteButton}
         type="button"
         onClick={handleFavoriteGameDelete}
+        aria-label="Remove from favorites"
       >
         <FaTrashAlt size={30} />
       </button>
